@@ -2,5 +2,5 @@ package com.myApp.weather.Utils;
 
 public class ApiUtils {
 
-    private static final String DARK_SKY_KEY = "349b49115a426ace2e143b5e92a262e6";
+    private static final String DARK_SKY_KEY = "0511c945c26f28ce2f4f4d190ffffe12";
 }
