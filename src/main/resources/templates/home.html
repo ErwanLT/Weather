@@ -7,5 +7,18 @@
 </head>
 <body>
     <div th:replace="fragments/header :: header"/>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form name="" class="form-inline" style="align:center;" method="post" th:action="@{/getWeather}" th:object="${coordinateForm}">
+                <fieldset>
+                    <legend>Coordinates</legend>
+                    <label>latitude</label><input type="text" th:field="*{latitude}" placeholder="latitude"/>
+                    <label>longitude</label><input type="text" th:field="*{longitude}" placeholder="longitude"/>
+                    <input type="submit" class="btn btn-primary" value="Rechercher"/>
+                </fieldset>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
