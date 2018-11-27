@@ -21,4 +21,9 @@ public class WeatherApplicationTests {
 		assertThat(controller).isNotNull();
 	}
 
+	@Test
+	public void applicationStart(){
+		WeatherApplication.main(new String[] {});
+	}
+
 }
