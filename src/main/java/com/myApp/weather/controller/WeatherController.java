@@ -27,6 +27,10 @@ public class WeatherController {
     @PostMapping("/getWeather")
     public String getWeather(@ModelAttribute("coordinateForm")CoordinateForm coordinateForm, Model model){
 
+        /*if(coordinateForm.getLatitude().isEmpty() ||
+            coordinateForm.getLongitude().isEmpty()){
+
+        }*/
 
         return index(model);
     }

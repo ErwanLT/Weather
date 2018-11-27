@@ -2,10 +2,12 @@ package com.myApp.weather;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.myApp.weather.form.CoordinateForm;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,24 +26,32 @@ public class HttpRequestTests {
 
     @Test
     public void shouldReturnDefaultHomePage() throws Exception {
-        this.mockMvc.perform(get("/")).andDo(print())
+        this.mockMvc.perform(get("/"))
+                .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("<title>Weather</title>")));
     }
 
     @Test
     public void shouldReturnHomePage() throws Exception {
-        this.mockMvc.perform(get("/home")).andDo(print())
+        this.mockMvc.perform(get("/home"))
+                .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("<title>Weather</title>")));
     }
 
     @Test
     public void shouldReturn404() throws Exception {
-        this.mockMvc.perform(get("/toto")).andDo(print())
+        this.mockMvc.perform(get("/toto"))
+                .andDo(print())
                 .andExpect(status().isNotFound());
     }
 
-
+    @Test
+    public void testGetWeatherController() throws Exception {
+        this.mockMvc.perform(post("/getWeather", new CoordinateForm("14", "15")))
+                .andDo(print())
+                .andExpect(status().isOk());
+    }
 
 }
