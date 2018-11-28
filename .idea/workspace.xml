@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48d2eebf-35d2-48ce-b5b0-ee22dd63aba0" name="Default Changelist" comment="add test and new controller method for future dev">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_florianlopes_spring_mvc_test_utils_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/Utils/ApiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/Utils/ApiUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/WeatherApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/WeatherApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myApp/weather/WeatherApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myApp/weather/WeatherApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/HttpRequestTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/HttpRequestTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/myApp/weather/controller/WeatherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myApp/weather/controller/WeatherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/myApp/weather/WeatherApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/myApp/weather/WeatherApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weather.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,9 +42,9 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="html" value="2" />
-          <entry key="java" value="12" />
+          <entry key="java" value="14" />
           <entry key="md" value="2" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -45,40 +52,72 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="12" />
+          <entry key="JAVA" value="14" />
           <entry key="Markdown" value="2" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="2" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="90" />
-          <entry key="java" value="619" />
-          <entry key="txt" value="139" />
-          <entry key="xml" value="5" />
+          <entry key="java" value="1083" />
+          <entry key="txt" value="161" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="90" />
-          <entry key="JAVA" value="619" />
-          <entry key="PLAIN_TEXT" value="139" />
-          <entry key="XML" value="5" />
+          <entry key="JAVA" value="1083" />
+          <entry key="PLAIN_TEXT" value="161" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="45">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
               <folding>
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/HttpRequestTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,16 +127,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/WeatherApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/Utils/ApiUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -124,13 +163,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
-        <option value="$PROJECT_DIR$/src/test/java/com/myApp/weather/HttpRequestTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/myApp/weather/WeatherApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/Utils/ApiUtils.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/myApp/weather/HttpRequestTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java" />
       </list>
     </option>
   </component>
@@ -267,7 +306,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543341994381" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543428085926" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -294,8 +333,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/LICENSE</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -396,7 +434,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in weather">
+  <component name="RunManager" selected="JUnit.HttpRequestTests.testGetWeatherBadRequest1">
     <configuration name="WeatherApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myApp.weather.WeatherApplication" />
       <module name="weather" />
@@ -406,14 +444,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in weather" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="weather" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -432,7 +462,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WeatherApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HttpRequestTests.testGetWeatherBadRequest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="weather" />
       <extension name="coverage">
         <pattern>
@@ -441,7 +471,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.myApp.weather" />
-      <option name="MAIN_CLASS_NAME" value="com.myApp.weather.WeatherApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="com.myApp.weather.HttpRequestTests" />
+      <option name="METHOD_NAME" value="testGetWeatherBadRequest1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpRequestTests.testGetWeatherController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weather" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myApp.weather.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myApp.weather" />
+      <option name="MAIN_CLASS_NAME" value="com.myApp.weather.HttpRequestTests" />
+      <option name="METHOD_NAME" value="testGetWeatherController" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -489,18 +537,18 @@
     <list>
       <item itemvalue="Maven.clean install" />
       <item itemvalue="Application.WeatherApplication" />
-      <item itemvalue="JUnit.WeatherApplicationTests" />
       <item itemvalue="JUnit.HttpRequestTests" />
       <item itemvalue="JUnit.com.myApp.weather in weather" />
-      <item itemvalue="JUnit.All in weather" />
+      <item itemvalue="JUnit.HttpRequestTests.testGetWeatherController" />
+      <item itemvalue="JUnit.HttpRequestTests.testGetWeatherBadRequest1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in weather" />
-        <item itemvalue="JUnit.com.myApp.weather in weather" />
+        <item itemvalue="JUnit.HttpRequestTests.testGetWeatherBadRequest1" />
+        <item itemvalue="JUnit.HttpRequestTests.testGetWeatherController" />
         <item itemvalue="JUnit.HttpRequestTests" />
         <item itemvalue="Application.WeatherApplication" />
-        <item itemvalue="JUnit.WeatherApplicationTests" />
+        <item itemvalue="JUnit.com.myApp.weather in weather" />
       </list>
     </recent_temporary>
   </component>
@@ -536,39 +584,46 @@
       <option name="project" value="LOCAL" />
       <updated>1543341327908</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add test for application start">
+      <created>1543342018152</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543342018152</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HttpRequestTests - 2018.11.26 at 20h 45m 07s.xml">
-      <configuration name="HttpRequestTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpRequestTests - 2018.11.26 at 20h 46m 48s.xml">
-      <configuration name="HttpRequestTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpRequestTests - 2018.11.26 at 20h 47m 36s.xml">
-      <configuration name="HttpRequestTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HttpRequestTests - 2018.11.26 at 20h 49m 04s.xml">
-      <configuration name="HttpRequestTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_myApp_weather_in_weather - 2018.11.26 at 20h 50m 10s.xml">
+    <history-entry file="com_myApp_weather_in_weather - 2018.11.28 at 07h 19m 36s.xml">
       <configuration name="com.myApp.weather in weather" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HttpRequestTests - 2018.11.27 at 07h 12m 51s.xml">
+    <history-entry file="HttpRequestTests - 2018.11.28 at 07h 22m 17s.xml">
       <configuration name="HttpRequestTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HttpRequestTests - 2018.11.27 at 18h 53m 22s.xml">
-      <configuration name="HttpRequestTests" configurationId="JUnit" />
+    <history-entry file="HttpRequestTests_testGetWeatherController - 2018.11.28 at 07h 23m 18s.xml">
+      <configuration name="HttpRequestTests.testGetWeatherController" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HttpRequestTests - 2018.11.27 at 18h 54m 10s.xml">
-      <configuration name="HttpRequestTests" configurationId="JUnit" />
+    <history-entry file="HttpRequestTests_testGetWeatherBadRequest1 - 2018.11.28 at 18h 42m 14s.xml">
+      <configuration name="HttpRequestTests.testGetWeatherBadRequest1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_myApp_weather_in_weather - 2018.11.27 at 18h 59m 24s.xml">
-      <configuration name="com.myApp.weather in weather" configurationId="JUnit" />
+    <history-entry file="HttpRequestTests_testGetWeatherController - 2018.11.28 at 18h 45m 26s.xml">
+      <configuration name="HttpRequestTests.testGetWeatherController" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_weather - 2018.11.27 at 19h 04m 09s.xml">
-      <configuration name="All in weather" configurationId="JUnit" />
+    <history-entry file="HttpRequestTests_testGetWeatherBadRequest1 - 2018.11.28 at 18h 47m 35s.xml">
+      <configuration name="HttpRequestTests.testGetWeatherBadRequest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HttpRequestTests_testGetWeatherBadRequest1 - 2018.11.28 at 18h 54m 10s.xml">
+      <configuration name="HttpRequestTests.testGetWeatherBadRequest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HttpRequestTests_testGetWeatherBadRequest1 - 2018.11.28 at 18h 54m 42s.xml">
+      <configuration name="HttpRequestTests.testGetWeatherBadRequest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HttpRequestTests_testGetWeatherBadRequest1 - 2018.11.28 at 18h 59m 03s.xml">
+      <configuration name="HttpRequestTests.testGetWeatherBadRequest1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HttpRequestTests_testGetWeatherBadRequest1 - 2018.11.28 at 18h 59m 28s.xml">
+      <configuration name="HttpRequestTests.testGetWeatherBadRequest1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -611,7 +666,8 @@
     <MESSAGE value="add form and test" />
     <MESSAGE value="minor bug fix to getWeather method in controller" />
     <MESSAGE value="add test and new controller method for future dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test and new controller method for future dev" />
+    <MESSAGE value="add test for application start" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test for application start" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/header.html">
@@ -638,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="93" column="20" lean-forward="true" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -662,38 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#627#628#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/HttpRequestTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/WeatherApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -706,17 +723,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/WeatherApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/Utils/ApiUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/Utils/ApiUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/WeatherApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        <state relative-caret-position="135">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/HttpRequestTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="80" selection-start-line="11" selection-start-column="80" selection-end-line="11" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

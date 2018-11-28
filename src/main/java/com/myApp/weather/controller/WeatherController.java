@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
+/**
+ * Main controller for the {@link com.myApp.weather.WeatherApplication} web page
+ */
 public class WeatherController {
 
     @GetMapping("/")
@@ -27,10 +30,14 @@ public class WeatherController {
     @PostMapping("/getWeather")
     public String getWeather(@ModelAttribute("coordinateForm")CoordinateForm coordinateForm, Model model){
 
-        /*if(coordinateForm.getLatitude().isEmpty() ||
+        if(coordinateForm.getLongitude() == null ||
             coordinateForm.getLongitude().isEmpty()){
-
-        }*/
+            throw new IllegalArgumentException("the longitude cannot be null or empty");
+        }
+        if(coordinateForm.getLatitude() == null ||
+                coordinateForm.getLatitude().isEmpty()){
+            throw new IllegalArgumentException("the latitude cannot be null or empty");
+        }
 
         return index(model);
     }

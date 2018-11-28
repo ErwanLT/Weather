@@ -1,13 +1,7 @@
 package com.myApp.weather;
 
-import static org.hamcrest.Matchers.containsString;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 import com.myApp.weather.form.CoordinateForm;
+import io.florianlopes.spring.test.web.servlet.request.MockMvcRequestBuilderUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,10 +9,20 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.util.NestedServletException;
+
+import static org.hamcrest.Matchers.containsString;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
+/**
+ * Test class for {@link com.myApp.weather.controller.WeatherController}
+ */
 public class HttpRequestTests {
 
     @Autowired
@@ -49,9 +53,25 @@ public class HttpRequestTests {
 
     @Test
     public void testGetWeatherController() throws Exception {
-        this.mockMvc.perform(post("/getWeather", new CoordinateForm("14", "15")))
+        CoordinateForm form = new CoordinateForm("14", "15");
+
+        this.mockMvc.perform(MockMvcRequestBuilderUtils.postForm("/getWeather", form))
                 .andDo(print())
                 .andExpect(status().isOk());
+    }
+
+    @Test(expected = NestedServletException.class)
+    public void testGetWeatherBadRequest1() throws Exception {
+        CoordinateForm form = new CoordinateForm("", "15");
+
+        this.mockMvc.perform(MockMvcRequestBuilderUtils.postForm("/getWeather", form));
+    }
+
+    @Test(expected = NestedServletException.class)
+    public void testGetWeatherBadRequest2() throws Exception {
+        CoordinateForm form = new CoordinateForm("14", "");
+
+        this.mockMvc.perform(MockMvcRequestBuilderUtils.postForm("/getWeather", form));
     }
 
 }

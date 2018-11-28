@@ -1,5 +1,8 @@
 package com.myApp.weather.form;
 
+/**
+ * form of the main page
+ */
 public class CoordinateForm {
 
     private String longitude;
