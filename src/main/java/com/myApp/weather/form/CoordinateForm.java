@@ -1,8 +1,14 @@
 package com.myApp.weather.form;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * form of the main page
  */
+@Data
+@Getter @Setter
 public class CoordinateForm {
 
     private String longitude;
@@ -13,22 +19,6 @@ public class CoordinateForm {
 
     public CoordinateForm(String longitude, String latitude) {
         this.longitude = longitude;
-        this.latitude = latitude;
-    }
-
-    public String getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(String longitude) {
-        this.longitude = longitude;
-    }
-
-    public String getLatitude() {
-        return latitude;
-    }
-
-    public void setLatitude(String latitude) {
         this.latitude = latitude;
     }
 }
