@@ -10,4 +10,4 @@ A simple web application using spring-boot to call the DarkSky Api and dispatch 
 Currently using
 - IntelliJ 2018.2
 - java 1.8
-- Maven 4.0
+- Maven 3.5.4
