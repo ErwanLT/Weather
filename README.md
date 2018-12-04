@@ -11,3 +11,4 @@ Currently using
 - IntelliJ 2018.2
 - java 1.8
 - Maven 3.5.4
+- Lombok plugin
