@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 /**
  * Main controller for the {@link com.myApp.weather.WeatherApplication} web page
+ *
+ * @author eletutour
+ * @since 1.0.0
  */
 public class WeatherController {
 

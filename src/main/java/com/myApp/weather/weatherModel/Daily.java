@@ -6,6 +6,10 @@ import lombok.Setter;
 
 @Data
 @Getter @Setter
+/**
+ * @author eletutour
+ * @since 1.0.0
+ */
 public class Daily extends Weather{
 
     private double temperatureMin;

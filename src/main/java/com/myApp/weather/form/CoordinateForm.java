@@ -6,13 +6,22 @@ import lombok.Setter;
 
 /**
  * form of the main page
+ *
+ * @author ewanletutour
+ * @since 1.0.0
  */
 @Data
 @Getter @Setter
 public class CoordinateForm {
 
+    /**
+     * the longitude parameter
+     */
     private String longitude;
 
+    /**
+     * the latitude parameter
+     */
     private String latitude;
 
     public CoordinateForm(){}

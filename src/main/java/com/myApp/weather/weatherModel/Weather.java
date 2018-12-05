@@ -8,6 +8,10 @@ import lombok.Setter;
 @Data
 @Getter @Setter
 @NoArgsConstructor
+/**
+ * @author eletutour
+ * @since 1.0.0
+ */
 public class Weather {
 
     private String icon;

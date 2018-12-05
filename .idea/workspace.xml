@@ -335,7 +335,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543768072540" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543990264527" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -353,7 +353,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.clean install">
+  <component name="RunManager" selected="Application.WeatherApplication">
     <configuration name="WeatherApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myApp.weather.WeatherApplication" />
       <module name="weather" />
@@ -463,11 +463,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WeatherApplication" />
         <item itemvalue="JUnit.com.myApp.weather in weather" />
         <item itemvalue="JUnit.HttpRequestTests.testGetWeatherBadRequest1" />
         <item itemvalue="JUnit.HttpRequestTests.testGetWeatherController" />
         <item itemvalue="JUnit.HttpRequestTests" />
-        <item itemvalue="Application.WeatherApplication" />
       </list>
     </recent_temporary>
   </component>
