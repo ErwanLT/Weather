@@ -51,13 +51,4 @@ public class HttpRequestTests {
                 .andExpect(status().isNotFound());
     }
 
-    @Test
-    public void testGetWeatherController() throws Exception {
-        CoordinateForm form = new CoordinateForm("14", "15");
-
-        this.mockMvc.perform(MockMvcRequestBuilderUtils.postForm("/getWeather", form))
-                .andDo(print())
-                .andExpect(status().isOk());
-    }
-
 }
