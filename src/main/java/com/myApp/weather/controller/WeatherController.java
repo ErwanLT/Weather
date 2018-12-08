@@ -1,6 +1,9 @@
 package com.myApp.weather.controller;
 
 import com.myApp.weather.form.CoordinateForm;
+import com.myApp.weather.service.WeatherService;
+import com.myApp.weather.weatherModel.Forecast;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,6 +18,9 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @since 1.0.0
  */
 public class WeatherController {
+
+    @Autowired
+    private WeatherService weatherService;
 
     @GetMapping("/")
     public String index(Model model) {
@@ -33,14 +39,9 @@ public class WeatherController {
     @PostMapping("/getWeather")
     public String getWeather(@ModelAttribute("coordinateForm")CoordinateForm coordinateForm, Model model){
 
-        if(coordinateForm.getLongitude() == null ||
-            coordinateForm.getLongitude().isEmpty()){
-            throw new IllegalArgumentException("the longitude cannot be null or empty");
-        }
-        if(coordinateForm.getLatitude() == null ||
-                coordinateForm.getLatitude().isEmpty()){
-            throw new IllegalArgumentException("the latitude cannot be null or empty");
-        }
+        Forecast forecast = weatherService.getForecast(coordinateForm.getLatitude(), coordinateForm.getLongitude());
+
+        model.addAttribute(forecast);
 
         return index(model);
     }

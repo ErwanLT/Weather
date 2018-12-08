@@ -13,8 +13,8 @@
             <form name="" class="form-inline" style="align:center;" method="post" th:action="@{/getWeather}" th:object="${coordinateForm}">
                 <fieldset>
                     <legend>Coordinates</legend>
-                    <label>latitude</label><input type="text" th:field="*{latitude}" placeholder="latitude"/>
-                    <label>longitude</label><input type="text" th:field="*{longitude}" placeholder="longitude"/>
+                    <label>latitude</label><input type="number" th:field="*{latitude}" placeholder="latitude" required step="any"/>
+                    <label>longitude</label><input type="number" th:field="*{longitude}" placeholder="longitude" required step="any"/>
                     <input type="submit" class="btn btn-primary" value="Rechercher"/>
                 </fieldset>
             </form>

@@ -60,18 +60,4 @@ public class HttpRequestTests {
                 .andExpect(status().isOk());
     }
 
-    @Test(expected = NestedServletException.class)
-    public void testGetWeatherBadRequest1() throws Exception {
-        CoordinateForm form = new CoordinateForm("", "15");
-
-        this.mockMvc.perform(MockMvcRequestBuilderUtils.postForm("/getWeather", form));
-    }
-
-    @Test(expected = NestedServletException.class)
-    public void testGetWeatherBadRequest2() throws Exception {
-        CoordinateForm form = new CoordinateForm("14", "");
-
-        this.mockMvc.perform(MockMvcRequestBuilderUtils.postForm("/getWeather", form));
-    }
-
 }

@@ -2,22 +2,18 @@ package com.myApp.weather.weatherModel;
 
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Data
 @Getter @Setter
-/**
- * @author eletutour
- * @since 1.0.0
- */
-public class Daily extends Weather{
+@NoArgsConstructor
+public class Daily {
 
-    private double temperatureMin;
-    private double temperatureMinTime;
-    private double temperatureMax;
-    private double temperatureMaxTime;
+    private String summary;
+    private String icon;
+    private List<DailyData> data;
 
-    public Daily() {
-        super();
-    }
 }

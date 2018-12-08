@@ -12,7 +12,7 @@ import lombok.Setter;
  * @author eletutour
  * @since 1.0.0
  */
-public class Weather {
+public class Currently {
 
     private String icon;
     private double nearestStormDistance;
