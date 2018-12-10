@@ -5,7 +5,6 @@ import com.myApp.weather.weatherModel.Daily;
 import com.myApp.weather.weatherModel.DailyData;
 import com.myApp.weather.weatherModel.Forecast;
 import com.myApp.weather.weatherModel.Currently;
-import com.sun.tools.doclint.Entity;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
