@@ -13,11 +13,11 @@ import lombok.*;
 @AllArgsConstructor
 public class DailyData {
 
-    private double time;
+    private String time;
     private String summary;
     private String icon;
-    private double sunriseTime;
-    private double sunsetTime;
+    private String sunriseTime;
+    private String sunsetTime;
     private Double moonPhase;
     private Double precipIntensity;
     private Double precipIntensityMax;

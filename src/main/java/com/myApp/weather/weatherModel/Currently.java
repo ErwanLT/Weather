@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.Instant;
+
 @Data
 @Getter @Setter
 @NoArgsConstructor
@@ -14,6 +16,8 @@ import lombok.Setter;
  */
 public class Currently {
 
+    private String time;
+    private String summary;
     private String icon;
     private double nearestStormDistance;
     private double nearestStormBearing;

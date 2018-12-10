@@ -2,8 +2,10 @@ package com.myApp.weather;
 
 import com.myApp.weather.service.GsonService;
 import com.myApp.weather.weatherModel.Daily;
+import com.myApp.weather.weatherModel.DailyData;
 import com.myApp.weather.weatherModel.Forecast;
 import com.myApp.weather.weatherModel.Currently;
+import com.sun.tools.doclint.Entity;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -50,21 +52,81 @@ public class GsonServiceTest {
 
         Forecast f = gsonService.stringToForecast(darkskyResponse);
         assertThat(f).isNotNull();
+        checkForecast(f);
+
+    }
+
+    private void checkForecast(Forecast f) {
         assertThat(f.getLatitude()).isEqualTo(15);
         assertThat(f.getLongitude()).isEqualTo(16);
-
-        // verifying Currently expected against response
         assertThat(f.getCurrently()).isNotNull();
-        Currently currently = f.getCurrently();
-        assertThat(currently.getIcon()).isEqualTo("clear-night");
-        assertThat(currently.getTemperature()).isEqualTo(55.74);
-
-        //verifying DailyBlock expected against response
         assertThat(f.getDaily()).isNotNull();
-        Daily daily = f.getDaily();
+
+        //check Currently
+        checkCurrently(f.getCurrently());
+
+        //checkDaily
+        checkDaily(f.getDaily());
+    }
+
+    private void checkCurrently(Currently currently) {
+        assertThat(currently.getSummary()).isEqualTo("Clear");
+        assertThat(currently.getIcon()).isEqualTo("clear-night");
+        assertThat(currently.getPrecipIntensity()).isEqualTo(0);
+        assertThat(currently.getPrecipProbability()).isEqualTo(0);
+        assertThat(currently.getTemperature()).isEqualTo(55.74);
+        assertThat(currently.getApparentTemperature()).isEqualTo(55.74);
+        assertThat(currently.getDewPoint()).isEqualTo(36.68);
+        assertThat(currently.getHumidity()).isEqualTo(0.49);
+        assertThat(currently.getPressure()).isEqualTo(1015.23);
+        assertThat(currently.getWindSpeed()).isEqualTo(10.1);
+        assertThat(currently.getWindGust()).isEqualTo(16.53);
+        assertThat(currently.getWindBearing()).isEqualTo(26);
+        assertThat(currently.getCloudCover()).isEqualTo(0);
+        assertThat(currently.getUvIndex()).isEqualTo(0);
+        assertThat(currently.getVisibility()).isEqualTo(10);
+        assertThat(currently.getOzone()).isEqualTo(226.59);
+    }
+
+    private void checkDaily(Daily daily) {
         assertThat(daily.getIcon()).isEqualTo("clear-day");
+        assertThat(daily.getSummary()).isEqualTo("No precipitation throughout the week, with high temperatures bottoming out at 83°F on Monday.");
         assertThat(daily.getData()).isNotNull();
         assertThat(daily.getData().size()).isEqualTo(8);
 
+        checkDailyData(daily.getData().get(0));
+    }
+
+    private void checkDailyData(DailyData dailyData) {
+        assertThat(dailyData.getTime()).isEqualTo("1544223600");
+        assertThat(dailyData.getSummary()).isEqualTo("Clear throughout the day.");
+        assertThat(dailyData.getIcon()).isEqualTo("clear-day");
+        assertThat(dailyData.getSunriseTime()).isEqualTo("1544245883");
+        assertThat(dailyData.getSunsetTime()).isEqualTo("1544286440");
+        assertThat(dailyData.getMoonPhase()).isEqualTo(0.04);
+        assertThat(dailyData.getPrecipIntensity()).isEqualTo(0);
+        assertThat(dailyData.getPrecipIntensityMax()).isEqualTo(0);
+        assertThat(dailyData.getPrecipProbability()).isEqualTo(0);
+        assertThat(dailyData.getPrecipIntensityMaxTime()).isEqualTo(0);
+        assertThat(dailyData.getPrecipAccumulation()).isNull();
+        assertThat(dailyData.getPrecipType()).isNull();
+        assertThat(dailyData.getTemperatureHigh()).isEqualTo(84.92);
+        assertThat(dailyData.getTemperatureLow()).isEqualTo(55.75);
+        assertThat(dailyData.getApparentTemperatureHigh()).isEqualTo(84.92);
+        assertThat(dailyData.getApparentTemperatureLow()).isEqualTo(55.75);
+        assertThat(dailyData.getTemperatureMin()).isEqualTo(55.43);
+        assertThat(dailyData.getTemperatureMax()).isEqualTo(84.92);
+        assertThat(dailyData.getApparentTemperatureMin()).isEqualTo(55.43);
+        assertThat(dailyData.getApparentTemperatureMax()).isEqualTo(84.92);
+        assertThat(dailyData.getDewPoint()).isEqualTo(34);
+        assertThat(dailyData.getHumidity()).isEqualTo(0.29);
+        assertThat(dailyData.getPressure()).isEqualTo(1014.51);
+        assertThat(dailyData.getWindSpeed()).isEqualTo(11.51);
+        assertThat(dailyData.getWindGust()).isEqualTo(20.42);
+        assertThat(dailyData.getWindBearing()).isEqualTo(27);
+        assertThat(dailyData.getCloudCover()).isEqualTo(0);
+        assertThat(dailyData.getUvIndex()).isEqualTo(9);
+        assertThat(dailyData.getVisibility()).isEqualTo(10);
+        assertThat(dailyData.getOzone()).isEqualTo(228.38);
     }
 }

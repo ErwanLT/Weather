@@ -41,7 +41,7 @@ public class WeatherController {
 
         Forecast forecast = weatherService.getForecast(coordinateForm.getLatitude(), coordinateForm.getLongitude());
 
-        model.addAttribute(forecast);
+        model.addAttribute("forecast", forecast);
 
         return index(model);
     }
