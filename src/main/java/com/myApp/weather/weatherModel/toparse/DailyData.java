@@ -1,4 +1,4 @@
-package com.myApp.weather.weatherModel;
+package com.myApp.weather.weatherModel.toparse;
 
 import lombok.*;
 

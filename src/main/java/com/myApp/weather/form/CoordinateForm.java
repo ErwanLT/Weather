@@ -14,20 +14,11 @@ import lombok.Setter;
 @Getter @Setter
 public class CoordinateForm {
 
-    /**
-     * the longitude parameter
-     */
-    private String longitude;
-
-    /**
-     * the latitude parameter
-     */
-    private String latitude;
+    private String location;
 
     public CoordinateForm(){}
 
-    public CoordinateForm(String longitude, String latitude) {
-        this.longitude = longitude;
-        this.latitude = latitude;
+    public CoordinateForm(String location) {
+        this.location = location;
     }
 }

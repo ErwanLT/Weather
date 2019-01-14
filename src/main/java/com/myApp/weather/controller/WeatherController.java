@@ -2,7 +2,7 @@ package com.myApp.weather.controller;
 
 import com.myApp.weather.form.CoordinateForm;
 import com.myApp.weather.service.WeatherService;
-import com.myApp.weather.weatherModel.Forecast;
+import com.myApp.weather.weatherModel.toparse.Forecast;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -39,7 +39,7 @@ public class WeatherController {
     @PostMapping("/getWeather")
     public String getWeather(@ModelAttribute("coordinateForm")CoordinateForm coordinateForm, Model model){
 
-        Forecast forecast = weatherService.getForecast(coordinateForm.getLatitude(), coordinateForm.getLongitude());
+        Forecast forecast = weatherService.getForecast(coordinateForm.getLocation());
 
         model.addAttribute("forecast", forecast);
 

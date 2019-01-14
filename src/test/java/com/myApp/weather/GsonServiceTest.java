@@ -1,10 +1,10 @@
 package com.myApp.weather;
 
 import com.myApp.weather.service.GsonService;
-import com.myApp.weather.weatherModel.Daily;
-import com.myApp.weather.weatherModel.DailyData;
-import com.myApp.weather.weatherModel.Forecast;
-import com.myApp.weather.weatherModel.Currently;
+import com.myApp.weather.weatherModel.toparse.Daily;
+import com.myApp.weather.weatherModel.toparse.DailyData;
+import com.myApp.weather.weatherModel.toparse.Forecast;
+import com.myApp.weather.weatherModel.toparse.Currently;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
