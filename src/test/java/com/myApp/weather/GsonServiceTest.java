@@ -3,7 +3,7 @@ package com.myApp.weather;
 import com.myApp.weather.service.GsonService;
 import com.myApp.weather.weatherModel.toparse.Daily;
 import com.myApp.weather.weatherModel.toparse.DailyData;
-import com.myApp.weather.weatherModel.toparse.Forecast;
+import com.myApp.weather.weatherModel.toparse.ForecastResponse;
 import com.myApp.weather.weatherModel.toparse.Currently;
 import org.junit.Before;
 import org.junit.Test;
@@ -49,13 +49,13 @@ public class GsonServiceTest {
     @Test
     public void deserializeDarkSkyResponse(){
 
-        Forecast f = gsonService.stringToForecast(darkskyResponse);
+        ForecastResponse f = gsonService.stringToForecast(darkskyResponse);
         assertThat(f).isNotNull();
         checkForecast(f);
 
     }
 
-    private void checkForecast(Forecast f) {
+    private void checkForecast(ForecastResponse f) {
         assertThat(f.getLatitude()).isEqualTo(15);
         assertThat(f.getLongitude()).isEqualTo(16);
         assertThat(f.getCurrently()).isNotNull();

@@ -1,8 +1,10 @@
 package com.myApp.weather.controller;
 
 import com.myApp.weather.form.CoordinateForm;
+import com.myApp.weather.form.Forecast;
+import com.myApp.weather.service.ResponseToFormService;
 import com.myApp.weather.service.WeatherService;
-import com.myApp.weather.weatherModel.toparse.Forecast;
+import com.myApp.weather.weatherModel.toparse.ForecastResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,6 +24,9 @@ public class WeatherController {
     @Autowired
     private WeatherService weatherService;
 
+    @Autowired
+    private ResponseToFormService responseToForm;
+
     @GetMapping("/")
     public String index(Model model) {
 
@@ -39,9 +44,11 @@ public class WeatherController {
     @PostMapping("/getWeather")
     public String getWeather(@ModelAttribute("coordinateForm")CoordinateForm coordinateForm, Model model){
 
-        Forecast forecast = weatherService.getForecast(coordinateForm.getLocation());
+        ForecastResponse forecast = weatherService.getForecast(coordinateForm.getLocation());
 
-        model.addAttribute("forecast", forecast);
+        Forecast f = responseToForm.darkskyResponseToForm(forecast);
+
+        model.addAttribute("forecast", f);
 
         return index(model);
     }

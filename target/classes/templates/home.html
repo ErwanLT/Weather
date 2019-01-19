@@ -9,24 +9,24 @@
     <div th:replace="fragments/header :: header"/>
     <div class="container-fluid">
         <div th:if="${forecast}">
-            <div class="row" style="background: rgba(238,238,238,.35)">
+            <div class="row row-grey">
                 <div class="col-md-2">
-                    <span style="font-weight: 500">Vent: </span><comment th:text="${forecast.currently.windSpeed}" />
+                    <span class="bold-span">Vent: </span><comment th:text="${forecast.currently.windSpeed}" />
                 </div>
                 <div class="col-md-2">
-                    <span style="font-weight: 500">Humidité: </span><comment th:text="${forecast.currently.humidity}" />
+                    <span class="bold-span">Humidité: </span><comment th:text="${forecast.currently.humidity}" />
                 </div>
                 <div class="col-md-2">
-                    <span style="font-weight: 500">Point de rosée: </span><comment th:text="${forecast.currently.dewPoint}" />
+                    <span class="bold-span">Point de rosée: </span><comment th:text="${forecast.currently.dewPoint}" />
                 </div>
                 <div class="col-md-2">
-                    <span style="font-weight: 500">UV: </span><comment th:text="${forecast.currently.uvIndex}" />
+                    <span class="bold-span">UV: </span><comment th:text="${forecast.currently.uvIndex}" />
                 </div>
                 <div class="col-md-2">
-                    <span style="font-weight: 500">Visibilité: </span><comment th:text="${forecast.currently.visibility}" />
+                    <span class="bold-span">Visibilité: </span><comment th:text="${forecast.currently.visibility}" />
                 </div>
                 <div class="col-md-2">
-                    <span style="font-weight: 500">Pression: </span><comment th:text="${forecast.currently.pressure}" />
+                    <span class="bold-span">Pression: </span><comment th:text="${forecast.currently.pressure}" />
                 </div>
             </div>
             <br>
@@ -42,8 +42,19 @@
                             <td>
                                 <table>
                                     <tr>
-                                        <td style="height: 20px;font-weight: 600"><comment th:text="${forecast.currently.temperature}" /></td>
-                                        <td style="height: 20px;font-weight: 600"><comment th:text="${forecast.currently.summary}" /></td>
+                                        <td style="height: 50px;font-weight: 600"><comment th:text="${forecast.currently.temperature}" /></td>
+                                        <td style="height: 50px;font-weight: 600"><comment th:text="${forecast.currently.summary}" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width:200px;">
+                                            <span class="bold-span">Ressentie:</span><comment th:text="${forecast.currently.apparentTemperature}"/>
+                                        </td>
+                                        <td style="width:200px;">
+                                            <span class="bold-span">Minimal:</span><comment th:text="${forecast.week[0].temperatureMin}" />
+                                        </td>
+                                        <td style="width:200px;">
+                                            <span class="bold-span">Maximal:</span><comment th:text="${forecast.week[0].temperatureMax}"/>
+                                        </td>
                                     </tr>
                                 </table>
                             </td>

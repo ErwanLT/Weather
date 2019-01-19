@@ -13,19 +13,19 @@ import lombok.*;
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Forecast {
+public class ForecastResponse {
 
     private double latitude;
 
     private double longitude;
 
     /**
-     * A data point containing the current weather conditions at the requested location.
+     * A data point containing the current weather.css conditions at the requested location.
      */
     private Currently currently;
 
     /**
-     * A data block containing the weather conditions day-by-day for the next week.
+     * A data block containing the weather.css conditions day-by-day for the next week.
      */
     private Daily daily;
 }

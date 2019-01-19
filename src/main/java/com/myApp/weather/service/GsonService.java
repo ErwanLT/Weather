@@ -1,7 +1,7 @@
 package com.myApp.weather.service;
 
 import com.google.gson.Gson;
-import com.myApp.weather.weatherModel.toparse.Forecast;
+import com.myApp.weather.weatherModel.toparse.ForecastResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class GsonService {
 
-    public Forecast stringToForecast(String darkSkyResponse){
+    public ForecastResponse stringToForecast(String darkSkyResponse){
         Gson g = new Gson();
 
-        return g.fromJson(darkSkyResponse, Forecast.class);
+        return g.fromJson(darkSkyResponse, ForecastResponse.class);
 
     }
 }
