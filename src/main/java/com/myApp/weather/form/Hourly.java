@@ -24,10 +24,11 @@ package com.myApp.weather.form;
 import lombok.*;
 
 @Data
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Currently {
+public class Hourly {
 
     private String time;
     private String summary;
@@ -43,62 +44,62 @@ public class Currently {
     private double ozone;
 
 
-    public Currently withTime(String time){
+    public Hourly withTime(String time){
         this.setTime(time);
         return this;
     }
 
-    public Currently withSummary(String summary){
+    public Hourly withSummary(String summary){
         this.setSummary(summary);
         return this;
     }
 
-    public Currently withIcon(String icon){
+    public Hourly withIcon(String icon){
         this.setIcon(icon);
         return this;
     }
 
-    public Currently withTemperature(String temperature){
+    public Hourly withTemperature(String temperature){
         this.setTemperature(temperature);
         return this;
     }
 
-    public Currently withApparentTemperature(String apparentTemperature){
+    public Hourly withApparentTemperature(String apparentTemperature){
         this.setApparentTemperature(apparentTemperature);
         return this;
     }
 
-    public Currently withDewPoint(String dewPoint){
+    public Hourly withDewPoint(String dewPoint){
         this.setDewPoint(dewPoint);
         return this;
     }
 
-    public Currently withHumidity(double humidity){
+    public Hourly withHumidity(double humidity){
         this.setHumidity(humidity);
         return this;
     }
 
-    public Currently withPressure(double pressure){
+    public Hourly withPressure(double pressure){
         this.setPressure(pressure);
         return this;
     }
 
-    public Currently withWindSpeed(double windSpeed){
+    public Hourly withWindSpeed(double windSpeed){
         this.setWindSpeed(windSpeed);
         return this;
     }
 
-    public Currently withUVIndex(double uvIndex){
+    public Hourly withUVIndex(double uvIndex){
         this.setUvIndex(uvIndex);
         return this;
     }
 
-    public Currently withVisibility(double visibility){
+    public Hourly withVisibility(double visibility){
         this.setVisibility(visibility);
         return this;
     }
 
-    public Currently withOzone(double ozone){
+    public Hourly withOzone(double ozone){
         this.setOzone(ozone);
         return this;
     }

@@ -19,24 +19,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
-package com.myApp.weather.form;
+package com.myApp.weather.service;
 
-import lombok.*;
+import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.sql.Timestamp;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
-public class Forecast {
+@Service
+public class DateService {
 
-    private Currently currently;
+    public String dateFromInstant(String i, String format){
+        long ltime = Long.parseLong(i) * 1000;
+        Timestamp timestamp = new Timestamp(ltime);
 
-    private String weekSummary;
-    private String hourSummary;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format)
+                .withZone(ZoneId.systemDefault());
 
-    private List<Hourly> hours;
-    private List<Daily> week;
+        return  formatter.format(timestamp.toLocalDateTime());
+    }
 }

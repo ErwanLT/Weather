@@ -6,68 +6,140 @@
     <div th:replace="fragments/header :: header-css"/>
 </head>
 <body>
-    <div th:replace="fragments/header :: header"/>
-    <div class="container-fluid">
-        <div th:if="${forecast}">
-            <div class="row row-grey">
-                <div class="col-md-2">
-                    <span class="bold-span">Vent: </span><comment th:text="${forecast.currently.windSpeed}" />
-                </div>
-                <div class="col-md-2">
-                    <span class="bold-span">Humidité: </span><comment th:text="${forecast.currently.humidity}" />
-                </div>
-                <div class="col-md-2">
-                    <span class="bold-span">Point de rosée: </span><comment th:text="${forecast.currently.dewPoint}" />
-                </div>
-                <div class="col-md-2">
-                    <span class="bold-span">UV: </span><comment th:text="${forecast.currently.uvIndex}" />
-                </div>
-                <div class="col-md-2">
-                    <span class="bold-span">Visibilité: </span><comment th:text="${forecast.currently.visibility}" />
-                </div>
-                <div class="col-md-2">
-                    <span class="bold-span">Pression: </span><comment th:text="${forecast.currently.pressure}" />
-                </div>
+<div th:replace="fragments/header :: header"/>
+<div class="container-fluid">
+    <div th:if="${forecast}">
+        <div class="row row-grey">
+            <div class="col-md-2">
+                <span class="bold-span">Vent: </span><comment th:text="${forecast.currently.windSpeed}" />Km/h
             </div>
-            <br>
-            <div class="row">
-                <div class="col-md-4">
-                </div>
-                <div class="col-md-4">
-
-                    <table>
-                        <tr>
-                            <td>
-                                <img th:src="@{'./img/weatherIcon/' + ${forecast.currently.icon} + '.png'}" width="100" height="100"/></td>
-                            <td>
+            <div class="col-md-2">
+                <span class="bold-span">Humidité: </span><comment th:text="${forecast.currently.humidity}"/>%
+            </div>
+            <div class="col-md-2">
+                <span class="bold-span">Point de rosée: </span><comment th:text="${forecast.currently.dewPoint}" />°C
+            </div>
+            <div class="col-md-2">
+                <span class="bold-span">UV: </span><comment th:text="${forecast.currently.uvIndex}" />
+            </div>
+            <div class="col-md-2">
+                <span class="bold-span">Visibilité: </span><comment th:text="${forecast.currently.visibility}" />
+            </div>
+            <div class="col-md-2">
+                <span class="bold-span">Pression: </span><comment th:text="${forecast.currently.pressure}" />
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <table>
+                    <tr>
+                        <td>
+                            <img th:src="@{'./img/weatherIcon/' + ${forecast.currently.icon} + '.png'}" class="img-big"/></td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td style="font-size: 25px;font-weight: 600"><comment th:text="${forecast.currently.temperature}" />°C</td>
+                                    <td style="font-size: 25px;font-weight: 600; column-width: 1000px;"><comment th:text="${forecast.currently.summary}" /></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-width-lg">
+                                        <span class="bold-span">Ressentie:</span><comment th:text="${forecast.currently.apparentTemperature}"/>°C
+                                    </td>
+                                    <td class="td-width-lg">
+                                        <span class="bold-span">Minimal:</span><comment th:text="${forecast.week[0].temperatureMin}" />°C
+                                    </td>
+                                    <td class="td-width-lg">
+                                        <span class="bold-span">Maximal:</span><comment th:text="${forecast.week[0].temperatureMax}"/>°C
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="owl-carousel">
+                    <div th:each="hour : ${forecast.hours}">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <comment th:text="${hour.time}"/>
+                            </div>
+                            <div class="panel-body">
                                 <table>
                                     <tr>
-                                        <td style="height: 50px;font-weight: 600"><comment th:text="${forecast.currently.temperature}" /></td>
-                                        <td style="height: 50px;font-weight: 600"><comment th:text="${forecast.currently.summary}" /></td>
+                                        <td><img th:src="@{'./img/weatherIcon/' + ${hour.icon} + '.png'}" class="img-medium"/></td>
                                     </tr>
                                     <tr>
-                                        <td style="width:200px;">
-                                            <span class="bold-span">Ressentie:</span><comment th:text="${forecast.currently.apparentTemperature}"/>
+                                        <td style="font-size: 25px;font-weight: 600"><comment th:text="${hour.temperature}" />°C</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="font-size: 25px;font-weight: 300"><comment th:text="${hour.apparentTemperature}"/>°C</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <span class="bold-span"><comment th:text="${forecast.weekSummary}" /></span>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <div th:each="day : ${forecast.week}">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <img th:src="@{'./img/weatherIcon/' + ${day.icon} + '.png'}" class="img-small"/>
+                            <a data-toggle="collapse" th:href="'#day'+${day.id}"><comment th:text="${day.time}"/></span></a>
+                        </div>
+                        <div class="panel-collapse collapse" th:id="'day' + ${day.id}">
+                            <div class="panel-body">
+                                <table>
+                                    <tr>
+                                        <comment style="font-size: 15px;font-weight: 600" th:text="${day.summary}"/>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-width-lg"><span class="bold-span">Minimal:</span><comment th:text="${day.temperatureMin}" />°C</td>
+                                        <td class="td-width-lg"><span class="bold-span">Maximal:</span><comment th:text="${day.temperatureMax}"/>°C</td>
+                                        <td class="td-width-lg">
+                                            <img style="width:30px; height:30px" th:src="@{'./img/unitIcon/sunrise.png'}"><comment th:text="${day.sunriseTime}" />
                                         </td>
-                                        <td style="width:200px;">
-                                            <span class="bold-span">Minimal:</span><comment th:text="${forecast.week[0].temperatureMin}" />
-                                        </td>
-                                        <td style="width:200px;">
-                                            <span class="bold-span">Maximal:</span><comment th:text="${forecast.week[0].temperatureMax}"/>
+                                        <td class="td-width-lg">
+                                            <img style="width:30px; height:30px" th:src="@{'./img/unitIcon/sunset.png'}"><comment th:text="${day.sunsetTime}" />
                                         </td>
                                     </tr>
                                 </table>
-                            </td>
-                        </tr>
-                    </table>
-
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                </div>
+            </div>
+            <div class="col-md-2">
             </div>
         </div>
     </div>
+</div>
 
-    <div th:replace="fragments/footer :: footer"/>
+<div th:replace="fragments/footer :: footer"/>
 </body>
 </html>

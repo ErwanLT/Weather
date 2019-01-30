@@ -19,24 +19,33 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
-package com.myApp.weather.form;
+package com.myApp.weather.weatherModel.toparse;
 
-import lombok.*;
-
-import java.util.List;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
-public class Forecast {
+@Getter @Setter
+public class HourlyData {
 
-    private Currently currently;
-
-    private String weekSummary;
-    private String hourSummary;
-
-    private List<Hourly> hours;
-    private List<Daily> week;
+    private String time;
+    private String summary;
+    private String icon;
+    private double nearestStormDistance;
+    private double nearestStormBearing;
+    private double precipIntensity;
+    private double precipProbability;
+    private double temperature;
+    private double apparentTemperature;
+    private double dewPoint;
+    private double humidity;
+    private double pressure;
+    private double windSpeed;
+    private double windGust;
+    private double windBearing;
+    private double cloudCover;
+    private double uvIndex;
+    private double visibility;
+    private double ozone;
 }
