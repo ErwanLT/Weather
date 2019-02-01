@@ -54,7 +54,7 @@ public class WeatherController {
         CoordinateForm coordinateForm = new CoordinateForm();
         model.addAttribute(coordinateForm);
 
-        return "/home";
+        return "home";
     }
 
     @GetMapping("/home")
