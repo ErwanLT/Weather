@@ -6,7 +6,7 @@
 	<groupId>com.myApp</groupId>
 	<artifactId>weather</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>weather</name>
 	<description>Demo project for Spring Boot</description>
