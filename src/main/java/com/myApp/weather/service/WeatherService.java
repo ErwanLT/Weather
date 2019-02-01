@@ -21,7 +21,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 package com.myApp.weather.service;
 
-import com.google.gson.Gson;
 import com.myApp.weather.utils.ApiUtils;
 import com.myApp.weather.weatherModel.toparse.ForecastResponse;
 import lombok.extern.slf4j.Slf4j;
@@ -38,14 +37,12 @@ import org.springframework.stereotype.Service;
 public class WeatherService {
 
     @Autowired
-    GsonService gsonService;
+    private GsonService gsonService;
 
     public ForecastResponse getForecast(String location){
-        ForecastResponse forecast;
-
-        Gson g = new Gson();
 
         String locationIQResponse = callApi(ApiUtils.getLocationiqUrl(location));
+        log.info(locationIQResponse);
 
         return getForecast(getLatitude(locationIQResponse), getLongitude(locationIQResponse));
     }
@@ -66,14 +63,10 @@ public class WeatherService {
 
         ForecastResponse forecast;
 
-        Gson g = new Gson();
-
-
         String darkSkyResponse = callApi(ApiUtils.getDarkSkyUrl(latitude,longitude));
+        log.info(darkSkyResponse);
 
         forecast = gsonService.stringToForecast(darkSkyResponse);
-
-        log.info(darkSkyResponse);
 
         return forecast;
     }
