@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="fragments/header :: header-css"/>
+</head>
+<body>
+<div th:fragment="currentInfo">
+    <div class="row row-grey">
+        <div class="col-md-2">
+            <span class="bold-span">Vent: </span><comment th:text="${forecast.currently.windSpeed}" />Km/h
+        </div>
+        <div class="col-md-2">
+            <span class="bold-span">Humidité: </span><comment th:text="${forecast.currently.humidity}"/>%
+        </div>
+        <div class="col-md-2">
+            <span class="bold-span">Point de rosée: </span><comment th:text="${forecast.currently.dewPoint}" />°C
+        </div>
+        <div class="col-md-2">
+            <span class="bold-span">UV: </span>
+                <comment th:if="${forecast.currently.uvIndex == 0}" th:text="${forecast.currently.uvIndex}" class="uv-low"/>
+                <comment th:if="${forecast.currently.uvIndex == 1}" th:text="${forecast.currently.uvIndex}" class="uv-low"/>
+                <comment th:if="${forecast.currently.uvIndex == 2}" th:text="${forecast.currently.uvIndex}" class="uv-low"/>
+                <comment th:if="${forecast.currently.uvIndex == 3}" th:text="${forecast.currently.uvIndex}" class="uv-moderate"/>
+                <comment th:if="${forecast.currently.uvIndex == 4}" th:text="${forecast.currently.uvIndex}" class="uv-moderate"/>
+                <comment th:if="${forecast.currently.uvIndex == 5}" th:text="${forecast.currently.uvIndex}" class="uv-moderate"/>
+                <comment th:if="${forecast.currently.uvIndex == 6}" th:text="${forecast.currently.uvIndex}" class="uv-hight"/>
+                <comment th:if="${forecast.currently.uvIndex == 7}" th:text="${forecast.currently.uvIndex}" class="uv-hight"/>
+                <comment th:if="${forecast.currently.uvIndex == 8}" th:text="${forecast.currently.uvIndex}" class="uv-very-hight"/>
+                <comment th:if="${forecast.currently.uvIndex == 9}" th:text="${forecast.currently.uvIndex}" class="uv-very-hight"/>
+                <comment th:if="${forecast.currently.uvIndex == 10}" th:text="${forecast.currently.uvIndex}" class="uv-very-hight"/>
+                <comment th:if="${forecast.currently.uvIndex > 10}" th:text="${forecast.currently.uvIndex}" class="uv-extrem"/>
+        </div>
+        <div class="col-md-2">
+            <span class="bold-span">Visibilité: </span><comment th:text="${forecast.currently.visibility}" />
+        </div>
+        <div class="col-md-2">
+            <span class="bold-span">Pression: </span><comment th:text="${forecast.currently.pressure}" />
+        </div>
+    </div>
+</div>
+</body>
+</html>

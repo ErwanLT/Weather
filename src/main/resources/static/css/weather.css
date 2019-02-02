@@ -34,3 +34,19 @@
     font-weight: 300;
     color: #b3b3b3
 }
+
+.uv-low {
+    background-color: #4DC7A0;
+}
+.uv-moderate {
+    background-color: burlywood;
+}
+.uv-hight {
+    background-color: darkorange;
+}
+.uv-very-hight {
+    background-color: crimson;
+}
+.uv-extrem {
+    background-color: blueviolet;
+}

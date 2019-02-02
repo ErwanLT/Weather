@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="fragments/header :: header-css"/>
+</head>
+<body>
+<div th:fragment="week">
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <span class="bold-span"><comment th:text="${forecast.weekSummary}" /></span>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <div th:each="day : ${forecast.week}">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <img th:src="@{'./img/weatherIcon/' + ${day.icon} + '.png'}" class="img-small"/>
+                        <a data-toggle="collapse" th:href="'#day'+${day.id}"><comment th:text="${day.time}"/></span></a>
+                    </div>
+                    <div class="panel-collapse collapse" th:id="'day' + ${day.id}">
+                        <div class="panel-body">
+                            <table>
+                                <tr>
+                                    <comment style="font-size: 15px;font-weight: 600" th:text="${day.summary}"/>
+                                </tr>
+                                <tr>
+                                    <td class="td-width-lg"><span class="bold-span">Minimal:</span><comment th:text="${day.temperatureMin}" />°C</td>
+                                    <td class="td-width-lg"><span class="bold-span">Maximal:</span><comment th:text="${day.temperatureMax}"/>°C</td>
+                                    <td class="td-width-lg">
+                                        <img style="width:30px; height:30px" th:src="@{'./img/unitIcon/sunrise.png'}"><comment th:text="${day.sunriseTime}" />
+                                    </td>
+                                    <td class="td-width-lg">
+                                        <img style="width:30px; height:30px" th:src="@{'./img/unitIcon/sunset.png'}"><comment th:text="${day.sunsetTime}" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>
+</body>
+</html>

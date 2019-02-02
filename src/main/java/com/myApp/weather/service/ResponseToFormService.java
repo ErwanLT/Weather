@@ -84,7 +84,7 @@ public class ResponseToFormService {
                 .withHumidity(responseForecastCurrently.getHumidity())
                 .withPressure(responseForecastCurrently.getPressure())
                 .withWindSpeed(responseForecastCurrently.getWindSpeed())
-                .withUVIndex(responseForecastCurrently.getUvIndex())
+                .withUVIndex((int)responseForecastCurrently.getUvIndex())
                 .withVisibility(responseForecastCurrently.getVisibility())
                 .withOzone(responseForecastCurrently.getOzone());
     }

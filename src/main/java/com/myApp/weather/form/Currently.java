@@ -38,7 +38,7 @@ public class Currently {
     private double humidity;
     private double pressure;
     private double windSpeed;
-    private double uvIndex;
+    private int uvIndex;
     private double visibility;
     private double ozone;
 
@@ -88,7 +88,7 @@ public class Currently {
         return this;
     }
 
-    public Currently withUVIndex(double uvIndex){
+    public Currently withUVIndex(int uvIndex){
         this.setUvIndex(uvIndex);
         return this;
     }

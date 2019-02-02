@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:replace="fragments/header :: header-css"/>
+</head>
+<body>
+<div th:fragment="hours">
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-10">
+            <span class="bold-span"><comment th:text="${forecast.hourSummary}" /></span>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="owl-carousel">
+                <div th:each="hour : ${forecast.hours}">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <comment th:text="${hour.time}"/>
+                        </div>
+                        <div class="panel-body">
+                            <table>
+                                <tr>
+                                    <td align="center" colspan="100%"><img th:src="@{'./img/weatherIcon/' + ${hour.icon} + '.png'}" class="img-medium"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="hour-temperature"><comment th:text="${hour.temperature}" />°C</td>
+                                    <td class="hour-apparent-temperature"><comment th:text="${hour.apparentTemperature}"/>°C</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+</body>
+</html>
