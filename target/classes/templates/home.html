@@ -68,6 +68,15 @@
         </div>
         <br><br>
         <div class="row">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-10">
+                <span class="bold-span"><comment th:text="${forecast.hourSummary}" /></span>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div class="owl-carousel">
@@ -79,13 +88,11 @@
                             <div class="panel-body">
                                 <table>
                                     <tr>
-                                        <td><img th:src="@{'./img/weatherIcon/' + ${hour.icon} + '.png'}" class="img-medium"/></td>
+                                        <td align="center" colspan="100%"><img th:src="@{'./img/weatherIcon/' + ${hour.icon} + '.png'}" class="img-medium"/></td>
                                     </tr>
                                     <tr>
-                                        <td style="font-size: 25px;font-weight: 600"><comment th:text="${hour.temperature}" />°C</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="font-size: 25px;font-weight: 300"><comment th:text="${hour.apparentTemperature}"/>°C</td>
+                                        <td class="hour-temperature"><comment th:text="${hour.temperature}" />°C</td>
+                                        <td class="hour-apparent-temperature"><comment th:text="${hour.apparentTemperature}"/>°C</td>
                                     </tr>
                                 </table>
                             </div>
