@@ -44,7 +44,13 @@ public class WeatherService {
         String locationIQResponse = callApi(ApiUtils.getLocationiqUrl(location));
         log.info(locationIQResponse);
 
-        return getForecast(getLatitude(locationIQResponse), getLongitude(locationIQResponse));
+        return getForecast(getLatitude(locationIQResponse), getLongitude(locationIQResponse), getLocation(locationIQResponse));
+    }
+
+    private String getLocation(String locationIQResponse) {
+        JSONArray array = new JSONArray(locationIQResponse);
+        JSONObject jsonObject = array.getJSONObject(0);
+        return jsonObject.getString("display_name");
     }
 
     private String getLongitude(String locationIQResponse) {
@@ -59,7 +65,7 @@ public class WeatherService {
         return jsonObject.getString("lat");
     }
 
-    public ForecastResponse getForecast(String latitude, String longitude) {
+    public ForecastResponse getForecast(String latitude, String longitude, String location) {
 
         ForecastResponse forecast;
 
@@ -67,6 +73,7 @@ public class WeatherService {
         log.info(darkSkyResponse);
 
         forecast = gsonService.stringToForecast(darkSkyResponse);
+        forecast.setLocation(location);
 
         return forecast;
     }

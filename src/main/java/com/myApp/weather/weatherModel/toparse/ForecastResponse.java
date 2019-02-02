@@ -40,6 +40,8 @@ public class ForecastResponse {
 
     private double longitude;
 
+    private String location;
+
     /**
      * A data point containing the current weather.css conditions at the requested location.
      */

@@ -36,13 +36,16 @@
             <div class="col-md-4">
                 <table>
                     <tr>
+                        <td colspan="100%" align="center"><comment th:text="${forecast.location}" /></td>
+                    </tr>
+                    <tr>
                         <td>
                             <img th:src="@{'./img/weatherIcon/' + ${forecast.currently.icon} + '.png'}" class="img-big"/></td>
                         <td>
                             <table>
                                 <tr>
                                     <td style="font-size: 25px;font-weight: 600"><comment th:text="${forecast.currently.temperature}" />°C</td>
-                                    <td style="font-size: 25px;font-weight: 600; column-width: 1000px;"><comment th:text="${forecast.currently.summary}" /></td>
+                                    <td style="font-size: 25px;font-weight: 600; column-width: 1000px;" colspan="3"><comment th:text="${forecast.currently.summary}" /></td>
                                 </tr>
                                 <tr>
                                     <td class="td-width-lg">

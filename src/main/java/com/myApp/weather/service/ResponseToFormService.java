@@ -44,6 +44,7 @@ public class ResponseToFormService {
 
         Forecast f = new Forecast();
 
+        f.setLocation(responseForecast.getLocation());
         f.setCurrently(getResponseDaily(responseForecast.getCurrently()));
 
         f.setWeekSummary(responseForecast.getDaily().getSummary());

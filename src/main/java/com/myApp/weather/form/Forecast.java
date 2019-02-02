@@ -32,6 +32,8 @@ import java.util.List;
 @Setter
 public class Forecast {
 
+    private String location;
+
     private Currently currently;
 
     private String weekSummary;

@@ -37,7 +37,7 @@ public class ApiUtils {
 
     private static final String LOCATIONIQ_URL1 = "https://eu1.locationiq.com/v1/search.php?key=";
 
-    private static final String LOCATIONIQ_URL2 = "&format=json";
+    private static final String LOCATIONIQ_URL2 = "&format=json&accept-language=fr";
 
     public static String getDarkSkyUrl(String latitude, String longitude){
 
