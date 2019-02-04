@@ -37,16 +37,56 @@
 
 .uv-low {
     background-color: #4DC7A0;
+    padding:.25em .4em;
+    font-size:100%;
+    font-weight:700;
+    line-height:1;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    border-radius:.25rem
 }
 .uv-moderate {
     background-color: burlywood;
+    padding:.25em .4em;
+    font-size:100%;
+    font-weight:700;
+    line-height:1;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    border-radius:.25rem
 }
 .uv-hight {
     background-color: darkorange;
+    padding:.25em .4em;
+    font-size:100%;
+    font-weight:700;
+    line-height:1;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    border-radius:.25rem
 }
 .uv-very-hight {
     background-color: crimson;
+    padding:.25em .4em;
+    font-size:100%;
+    font-weight:700;
+    line-height:1;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    border-radius:.25rem
 }
 .uv-extrem {
     background-color: blueviolet;
+    padding:.25em .4em;
+    font-size:100%;
+    font-weight:700;
+    line-height:1;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    border-radius:.25rem
 }
