@@ -54,16 +54,27 @@ public class WeatherController {
         CoordinateForm coordinateForm = new CoordinateForm();
         model.addAttribute(coordinateForm);
 
-        return "home";
+        return "help";
     }
 
     @GetMapping("/home")
     public String home(Model model){
+        CoordinateForm coordinateForm = new CoordinateForm();
+        model.addAttribute(coordinateForm);
+
+        return "home";
+    }
+
+    @GetMapping("/help")
+    public String help(Model model){
         return index(model);
     }
 
     @PostMapping("/getWeather")
     public String getWeather(@ModelAttribute("coordinateForm")CoordinateForm coordinateForm, Model model){
+
+        CoordinateForm form = new CoordinateForm();
+        model.addAttribute(form);
 
         ForecastResponse forecast = weatherService.getForecast(coordinateForm.getLocation());
 
@@ -71,6 +82,6 @@ public class WeatherController {
 
         model.addAttribute("forecast", f);
 
-        return index(model);
+        return "home";
     }
 }
