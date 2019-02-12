@@ -90,3 +90,8 @@
     vertical-align:baseline;
     border-radius:.25rem
 }
+
+.example {
+    font-weight: bold;
+    text-decoration: underline;
+}

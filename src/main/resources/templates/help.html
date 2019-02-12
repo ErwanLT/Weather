@@ -8,8 +8,38 @@
 <body>
 <div th:replace="fragments/header :: header"/>
 <div class="container-fluid">
-    <p>ceci est la page d'aide</p>
-    <p>actuellement en construction</p>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-9">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Location Form :
+                </div>
+                <div class="panel-body">
+                    <p>
+                        You can search for weather in any place around the globe (yes, i think the earth is not flat)<br>
+                        Do to so, fill the form with at choice : <br>
+                    <ul>
+                        <li>street</li>
+                        <li>city</li>
+                        <li>county</li>
+                        <li>state</li>
+                        <li>country</li>
+                        <li>postal code</li>
+                    </ul>
+                    <div class="alert alert-warning">
+                        Be carefull, many city can have the same Postal Code<br>
+                        <span class="example">Example :</span><br>
+                        For The postal code 75000, I can have Paris in France and
+                        Residencial Antônio Carlos Pires in Brasil
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
 </div>
 
 <div th:replace="fragments/footer :: footer"/>
