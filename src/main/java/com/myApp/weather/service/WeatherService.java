@@ -22,6 +22,7 @@ SOFTWARE.*/
 package com.myApp.weather.service;
 
 import com.myApp.weather.utils.ApiUtils;
+import com.myApp.weather.utils.FakeForecastUtils;
 import com.myApp.weather.weatherModel.toparse.ForecastResponse;
 import lombok.extern.slf4j.Slf4j;
 import okhttp3.OkHttpClient;
@@ -44,7 +45,19 @@ public class WeatherService {
         String locationIQResponse = callApi(ApiUtils.getLocationiqUrl(location));
         log.info(locationIQResponse);
 
-        return getForecast(getLatitude(locationIQResponse), getLongitude(locationIQResponse), getLocation(locationIQResponse));
+        if(locationIQResponse.isEmpty()){
+            log.debug("offline mode activate");
+            return getFakeForecast();
+        } else {
+            return getForecast(getLatitude(locationIQResponse), getLongitude(locationIQResponse), getLocation(locationIQResponse));
+        }
+    }
+
+    private ForecastResponse getFakeForecast() {
+        ForecastResponse forecastResponse = gsonService.stringToForecast(FakeForecastUtils.fakeDarkSkyResponse);
+        forecastResponse.setLocation("Fake forecast");
+
+        return forecastResponse;
     }
 
     private String getLocation(String locationIQResponse) {

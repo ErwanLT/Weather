@@ -8,6 +8,13 @@
 <body>
 <div th:replace="fragments/header :: header"/>
 <div class="container-fluid">
+    <div id="alertDiv">
+        <th:block th:if="${message != null}">
+            <!-- /* The message code is returned from the @Controller */ -->
+            <div th:replace="fragments/components :: alert"/>
+        </th:block>
+    </div>
+
     <div th:if="${forecast}">
         <div th:replace="fragments/currentInfo :: currentInfo"/>
         <br><br>

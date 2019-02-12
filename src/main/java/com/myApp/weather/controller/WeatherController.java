@@ -25,13 +25,16 @@ import com.myApp.weather.form.CoordinateForm;
 import com.myApp.weather.form.Forecast;
 import com.myApp.weather.service.ResponseToFormService;
 import com.myApp.weather.service.WeatherService;
+import com.myApp.weather.utils.MessageHelper;
 import com.myApp.weather.weatherModel.toparse.ForecastResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.thymeleaf.util.StringUtils;
 
 @Controller
 /**
@@ -71,16 +74,24 @@ public class WeatherController {
     }
 
     @PostMapping("/getWeather")
-    public String getWeather(@ModelAttribute("coordinateForm")CoordinateForm coordinateForm, Model model){
+    public String getWeather(@ModelAttribute("coordinateForm")CoordinateForm coordinateForm, Model model, Errors errors){
 
         CoordinateForm form = new CoordinateForm();
         model.addAttribute(form);
 
-        ForecastResponse forecast = weatherService.getForecast(coordinateForm.getLocation());
+        if(StringUtils.isEmpty(coordinateForm.getLocation())){
+            //should never happened because it's a required field
+            MessageHelper.addDangerAttribute(model, "The location field is null or Empty");
+        } else {
+            ForecastResponse forecast = weatherService.getForecast(coordinateForm.getLocation());
+            if ("Fake forecast".equals(forecast.getLocation())){
+                MessageHelper.addWarningAttribute(model, "This is a fake response because something bad happened.");
+            }
 
-        Forecast f = responseToForm.darkskyResponseToForm(forecast);
+            Forecast f = responseToForm.darkskyResponseToForm(forecast);
 
-        model.addAttribute("forecast", f);
+            model.addAttribute("forecast", f);
+        }
 
         return "home";
     }
