@@ -26,10 +26,12 @@
                         <div class="panel-body">
                             <table>
                                 <tr>
-                                    <td align="center" colspan="100%"><img th:src="@{'./img/weatherIcon/' + ${hour.icon} + '.png'}" class="img-medium"/></td>
+                                    <td><img th:src="@{'./img/weatherIcon/' + ${hour.icon} + '.png'}" class="img-medium"/></td>
                                 </tr>
                                 <tr>
                                     <td class="hour-temperature"><comment th:text="${hour.temperature}" />°C</td>
+                                </tr>
+                                <tr>
                                     <td class="hour-apparent-temperature"><comment th:text="${hour.apparentTemperature}"/>°C</td>
                                 </tr>
                             </table>

@@ -43,7 +43,6 @@
 }
 .owl-carousel .owl-item img{
     display:block;
-    width:100%
 }
 .owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{
     display:none
