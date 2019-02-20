@@ -26,13 +26,16 @@
                         <div class="panel-body">
                             <table>
                                 <tr>
-                                    <td><img th:src="@{'./img/weatherIcon/' + ${hour.icon} + '.png'}" class="img-medium"/></td>
+                                    <td></td><td><img th:src="@{'./img/weatherIcon/' + ${hour.icon} + '.png'}" class="img-medium"/></td>
                                 </tr>
                                 <tr>
-                                    <td class="hour-temperature"><comment th:text="${hour.temperature}" />°C</td>
+                                    <td>Temperature :</td><td class="hour-temperature"><comment th:text="${hour.temperature}" />°C</td>
                                 </tr>
                                 <tr>
-                                    <td class="hour-apparent-temperature"><comment th:text="${hour.apparentTemperature}"/>°C</td>
+                                    <td>Ressentie :</td><td class="hour-apparent-temperature"><comment th:text="${hour.apparentTemperature}"/>°C</td>
+                                </tr>
+                                <tr>
+                                    <td>Chance de précipitation :</td><td><comment th:text="${hour.precipProbability}"/>%</td>
                                 </tr>
                             </table>
                         </div>

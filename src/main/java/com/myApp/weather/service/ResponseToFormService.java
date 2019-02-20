@@ -66,7 +66,8 @@ public class ResponseToFormService {
                 .withSummary(data.getSummary())
                 .withIcon(data.getIcon())
                 .withTemperature(Double.toString(data.getTemperature()))
-                .withApparentTemperature(Double.toString(data.getApparentTemperature())));
+                .withApparentTemperature(Double.toString(data.getApparentTemperature()))
+                .withPrecipProbability(data.getPrecipProbability()));
         }
         return hours;
     }

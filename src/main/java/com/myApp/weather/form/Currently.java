@@ -74,7 +74,7 @@ public class Currently {
     }
 
     public Currently withHumidity(double humidity){
-        this.setHumidity(humidity);
+        this.setHumidity(humidity*100);
         return this;
     }
 

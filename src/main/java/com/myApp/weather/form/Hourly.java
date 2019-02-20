@@ -36,6 +36,7 @@ public class Hourly {
     private String temperature;
     private String apparentTemperature;
     private String dewPoint;
+    private double precipProbability;
     private double humidity;
     private double pressure;
     private double windSpeed;
@@ -101,6 +102,11 @@ public class Hourly {
 
     public Hourly withOzone(double ozone){
         this.setOzone(ozone);
+        return this;
+    }
+
+    public Hourly withPrecipProbability(double precipProbability) {
+        this.setPrecipProbability(precipProbability*100);
         return this;
     }
 }
