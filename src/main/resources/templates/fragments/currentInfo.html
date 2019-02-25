@@ -7,7 +7,7 @@
 <div th:fragment="currentInfo">
     <div class="row row-grey">
         <div class="col-md-2">
-            <span class="bold-span">Vent: </span><comment th:text="${forecast.currently.windSpeed}" />Km/h
+            <span class="bold-span">Vent: </span><comment th:text="${forecast.currently.windSpeed}" />m/s
         </div>
         <div class="col-md-2">
             <span class="bold-span">Humidité: </span><comment th:text="${forecast.currently.humidity}"/>%
@@ -31,10 +31,10 @@
                 <comment th:if="${forecast.currently.uvIndex > 10}" th:text="${forecast.currently.uvIndex}" class="uv-extrem"/>
         </div>
         <div class="col-md-2">
-            <span class="bold-span">Visibilité: </span><comment th:text="${forecast.currently.visibility}" />
+            <span class="bold-span">Visibilité: </span><comment th:text="${forecast.currently.visibility}" />+km
         </div>
         <div class="col-md-2">
-            <span class="bold-span">Pression: </span><comment th:text="${forecast.currently.pressure}" />
+            <span class="bold-span">Pression: </span><comment th:text="${forecast.currently.pressure}" />hPa
         </div>
     </div>
 </div>
