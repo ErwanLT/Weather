@@ -1,3 +1,4 @@
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -19,11 +20,11 @@
         <div class="col-md-10">
             <div class="owl-carousel">
                 <div th:each="hour : ${forecast.hours}">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <comment th:text="${hour.time}"/>
+                    <div class="card">
+                        <div class="card-header">
+                            <comment th:text="${hour.time}"/>h
                         </div>
-                        <div class="panel-body">
+                        <div class="card-body">
                             <table>
                                 <tr>
                                     <td></td><td><img th:src="@{'./img/weatherIcon/' + ${hour.icon} + '.png'}" class="img-medium"/></td>
@@ -35,7 +36,7 @@
                                     <td>Ressentie :</td><td class="hour-apparent-temperature"><comment th:text="${hour.apparentTemperature}"/>°C</td>
                                 </tr>
                                 <tr>
-                                    <td>Chance de précipitation :</td><td><comment th:text="${hour.precipProbability}"/>%</td>
+                                    <td>Chance de précipitation :</td><td class="hour-precip-prob"><comment th:text="${hour.precipProbability}"/>%</td>
                                 </tr>
                             </table>
                         </div>

@@ -3,7 +3,7 @@
 }
 
 .row-grey {
-    background: rgba(238,238,238,.35);
+    background: rgba(85, 85, 85, 0.35);
 }
 
 .td-width-lg {
@@ -32,7 +32,13 @@
 .hour-apparent-temperature {
     font-size: 25px;
     font-weight: 300;
-    color: #b3b3b3
+    color: #757575
+}
+
+.hour-precip-prob {
+    font-size: 25px;
+    font-weight: 300;
+    color: #b6b6b6
 }
 
 .uv-low {
