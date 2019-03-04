@@ -21,10 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 package com.myApp.weather.service;
 
-import com.myApp.weather.form.Currently;
-import com.myApp.weather.form.Daily;
-import com.myApp.weather.form.Forecast;
-import com.myApp.weather.form.Hourly;
+import com.myApp.weather.form.*;
 import com.myApp.weather.weatherModel.toparse.ForecastResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,9 +48,22 @@ public class ResponseToFormService {
         f.setHourSummary(responseForecast.getHourly().getSummary());
         f.setWeek(getWeekFromAPIResponse(responseForecast.getDaily()));
         f.setHours(getHoursFromApiResponse(responseForecast.getHourly()));
+        f.setAlerts(getAlertsFromApiResponse(responseForecast.getAlerts()));
 
         return f;
 
+    }
+
+    private List<Alert> getAlertsFromApiResponse(List<com.myApp.weather.weatherModel.toparse.Alert> alerts) {
+        List<Alert> alertsList = new ArrayList<>();
+
+        for (com.myApp.weather.weatherModel.toparse.Alert alert :
+                alerts
+             ) {
+            alertsList.add(new Alert()
+                .withTitle(alert.getTitle()));
+        }
+        return alertsList;
     }
 
     private List<Hourly> getHoursFromApiResponse(com.myApp.weather.weatherModel.toparse.Hourly hourly) {

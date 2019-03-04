@@ -41,4 +41,6 @@ public class Forecast {
 
     private List<Hourly> hours;
     private List<Daily> week;
+
+    private List<Alert> alerts;
 }

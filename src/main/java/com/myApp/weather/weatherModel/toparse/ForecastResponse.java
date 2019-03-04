@@ -23,6 +23,9 @@ package com.myApp.weather.weatherModel.toparse;
 
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
  * the object that is returned by the call to darksky
@@ -53,4 +56,6 @@ public class ForecastResponse {
      * A data block containing the weather.css conditions day-by-day for the next week.
      */
     private Daily daily;
+
+    private List<Alert> alerts = new ArrayList<>();
 }

@@ -17,7 +17,13 @@
 
     <div th:if="${forecast}">
         <div th:replace="fragments/currentInfo :: currentInfo"/>
-        <br><br>
+        <br>
+        <div th:if="${not #lists.isEmpty(forecast.getAlerts())}">
+            <div class="alert alert-danger">
+                <i class="fas fa-exclamation-triangle"></i> <span class="bold-span" th:text="${forecast.getAlerts().get(0).title}"></span>
+            </div>
+        </div>
+        <br>
         <div th:replace="fragments/currently :: currently"/>
         <br><br>
         <div th:replace="fragments/hours :: hours"/>
