@@ -21,4 +21,9 @@ public class Alert {
         return this;
     }
 
+    public Alert withUri(String uri){
+        this.setUri(uri);
+        return this;
+    }
+
 }

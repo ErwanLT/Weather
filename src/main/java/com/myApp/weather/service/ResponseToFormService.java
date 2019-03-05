@@ -57,11 +57,10 @@ public class ResponseToFormService {
     private List<Alert> getAlertsFromApiResponse(List<com.myApp.weather.weatherModel.toparse.Alert> alerts) {
         List<Alert> alertsList = new ArrayList<>();
 
-        for (com.myApp.weather.weatherModel.toparse.Alert alert :
-                alerts
-             ) {
+        for (com.myApp.weather.weatherModel.toparse.Alert alert : alerts) {
             alertsList.add(new Alert()
-                .withTitle(alert.getTitle()));
+                .withTitle(alert.getTitle())
+                .withUri(alert.getUri()));
         }
         return alertsList;
     }
