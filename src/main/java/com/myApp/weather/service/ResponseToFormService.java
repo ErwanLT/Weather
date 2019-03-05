@@ -74,9 +74,9 @@ public class ResponseToFormService {
                 .withTime(dateService.dateFromInstant(data.getTime(), "dd/MM/yyyy HH"))
                 .withSummary(data.getSummary())
                 .withIcon(data.getIcon())
-                .withTemperature(Double.toString(data.getTemperature()))
-                .withApparentTemperature(Double.toString(data.getApparentTemperature()))
-                .withPrecipProbability(data.getPrecipProbability()));
+                .withTemperature((int) Math.round(data.getTemperature()))
+                .withApparentTemperature((int) Math.round(data.getApparentTemperature()))
+                .withPrecipProbability((int) Math.round(data.getPrecipProbability())));
         }
         return hours;
     }
@@ -88,9 +88,9 @@ public class ResponseToFormService {
                 .withTime(responseForecastCurrently.getTime())
                 .withSummary(responseForecastCurrently.getSummary())
                 .withIcon(responseForecastCurrently.getIcon())
-                .withTemperature(Double.toString(responseForecastCurrently.getTemperature()))
-                .withApparentTemperature(Double.toString(responseForecastCurrently.getApparentTemperature()))
-                .withDewPoint(Double.toString(responseForecastCurrently.getDewPoint()))
+                .withTemperature((int) Math.round(responseForecastCurrently.getTemperature()))
+                .withApparentTemperature((int) Math.round(responseForecastCurrently.getApparentTemperature()))
+                .withDewPoint((int) Math.round(responseForecastCurrently.getDewPoint()))
                 .withHumidity(responseForecastCurrently.getHumidity())
                 .withPressure(responseForecastCurrently.getPressure())
                 .withWindSpeed(responseForecastCurrently.getWindSpeed())
@@ -113,8 +113,8 @@ public class ResponseToFormService {
             .withSummary(data.getSummary())
             .withSunriseTime(dateService.dateFromInstant(data.getSunriseTime(), "HH:mm"))
             .withSunsetTime(dateService.dateFromInstant(data.getSunsetTime(), "HH:mm"))
-            .withTemperatureMax(data.getTemperatureMax().toString())
-            .withTemperatureMin(data.getTemperatureMin().toString()));
+            .withTemperatureMax((int) Math.round(data.getTemperatureMax()))
+            .withTemperatureMin((int) Math.round(data.getTemperatureMin())));
 
             id = id + 1;
         }

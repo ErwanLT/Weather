@@ -33,10 +33,10 @@ public class Hourly {
     private String time;
     private String summary;
     private String icon;
-    private String temperature;
-    private String apparentTemperature;
+    private int temperature;
+    private int apparentTemperature;
     private String dewPoint;
-    private double precipProbability;
+    private int precipProbability;
     private double humidity;
     private double pressure;
     private double windSpeed;
@@ -60,12 +60,12 @@ public class Hourly {
         return this;
     }
 
-    public Hourly withTemperature(String temperature){
+    public Hourly withTemperature(int temperature){
         this.setTemperature(temperature);
         return this;
     }
 
-    public Hourly withApparentTemperature(String apparentTemperature){
+    public Hourly withApparentTemperature(int apparentTemperature){
         this.setApparentTemperature(apparentTemperature);
         return this;
     }
@@ -105,7 +105,7 @@ public class Hourly {
         return this;
     }
 
-    public Hourly withPrecipProbability(double precipProbability) {
+    public Hourly withPrecipProbability(int precipProbability) {
         this.setPrecipProbability(precipProbability*100);
         return this;
     }

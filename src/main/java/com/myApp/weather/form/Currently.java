@@ -32,9 +32,9 @@ public class Currently {
     private String time;
     private String summary;
     private String icon;
-    private String temperature;
-    private String apparentTemperature;
-    private String dewPoint;
+    private int temperature;
+    private int apparentTemperature;
+    private int dewPoint;
     private double humidity;
     private double pressure;
     private double windSpeed;
@@ -58,17 +58,17 @@ public class Currently {
         return this;
     }
 
-    public Currently withTemperature(String temperature){
+    public Currently withTemperature(int temperature){
         this.setTemperature(temperature);
         return this;
     }
 
-    public Currently withApparentTemperature(String apparentTemperature){
+    public Currently withApparentTemperature(int apparentTemperature){
         this.setApparentTemperature(apparentTemperature);
         return this;
     }
 
-    public Currently withDewPoint(String dewPoint){
+    public Currently withDewPoint(int dewPoint){
         this.setDewPoint(dewPoint);
         return this;
     }

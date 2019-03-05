@@ -20,7 +20,7 @@
         <br>
         <div th:if="${not #lists.isEmpty(forecast.getAlerts())}">
             <div class="alert alert-danger">
-                <i class="fas fa-exclamation-triangle"></i> <span class="bold-span" th:text="${forecast.getAlerts().get(0).title}"></span>
+                <i class="fas fa-exclamation-triangle"></i> <a th:href="${forecast.getAlerts().get(0).uri}" target="_blank"><span class="bold-span" th:text="${forecast.getAlerts().get(0).title}"></span></a>
             </div>
         </div>
         <br>

@@ -42,17 +42,17 @@ public class Daily {
     private double precipIntensityMaxTime;
     private double precipAccumulation;
     private String precipType;
-    private double temperatureHigh;
+    private int temperatureHigh;
     private double temperatureHighTime;
-    private double temperatureLow;
+    private int temperatureLow;
     private double temperatureLowTime;
     private double apparentTemperatureHigh;
     private double apparentTemperatureHighTime;
     private double apparentTemperatureLow;
     private double apparentTemperatureLowTime;
-    private String temperatureMin;
+    private int temperatureMin;
     private double temperatureMinTime;
-    private String temperatureMax;
+    private int temperatureMax;
     private double temperatureMaxTime;
     private double apparentTemperatureMin;
     private double apparentTemperatureMinTime;
@@ -101,12 +101,12 @@ public class Daily {
         return this;
     }
 
-    public Daily withTemperatureMax(String temperatureMax){
+    public Daily withTemperatureMax(int temperatureMax){
         this.setTemperatureMax(temperatureMax);
         return this;
     }
 
-    public Daily withTemperatureMin(String temperatureMin){
+    public Daily withTemperatureMin(int temperatureMin){
         this.setTemperatureMin(temperatureMin);
         return this;
     }
