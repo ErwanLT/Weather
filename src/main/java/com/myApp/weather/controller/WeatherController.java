@@ -68,6 +68,14 @@ public class WeatherController {
         return "home";
     }
 
+    @GetMapping("/history")
+    public String history(Model model){
+        CoordinateForm coordinateForm = new CoordinateForm();
+        model.addAttribute(coordinateForm);
+
+        return "history";
+    }
+
     @GetMapping("/help")
     public String help(Model model){
         return index(model);
