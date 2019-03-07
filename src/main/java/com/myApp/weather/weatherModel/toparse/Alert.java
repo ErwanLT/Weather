@@ -19,7 +19,7 @@ public class Alert {
 
     private String time;
 
-    private String expire;
+    private String expires;
 
     private String description;
 
