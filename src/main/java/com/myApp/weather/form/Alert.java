@@ -26,4 +26,14 @@ public class Alert {
         return this;
     }
 
+    public Alert withTime(String time){
+        this.setTime(time);
+        return this;
+    }
+
+    public Alert withExpire(String expire){
+        this.setExpire(expire);
+        return this;
+    }
+
 }

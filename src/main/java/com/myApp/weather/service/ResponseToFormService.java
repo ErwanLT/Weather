@@ -58,9 +58,16 @@ public class ResponseToFormService {
         List<Alert> alertsList = new ArrayList<>();
 
         for (com.myApp.weather.weatherModel.toparse.Alert alert : alerts) {
-            alertsList.add(new Alert()
+            Alert alert1 = new Alert()
                 .withTitle(alert.getTitle())
-                .withUri(alert.getUri()));
+                .withUri(alert.getUri())
+                .withTime(dateService.dateFromInstant(alert.getTime(), "dd/MM/yyyy hh:mm"));
+            if(alert.getExpire() != null){
+                alert1.withExpire(dateService.dateFromInstant(alert.getExpire(), "dd/MM/yyyy hh:mm"));
+            } else {
+                alert1.withExpire("not define");
+            }
+            alertsList.add(alert1);
         }
         return alertsList;
     }
