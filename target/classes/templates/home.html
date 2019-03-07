@@ -21,6 +21,7 @@
         <div th:if="${not #lists.isEmpty(forecast.getAlerts())}">
             <div class="alert alert-danger">
                 <i class="fas fa-exclamation-triangle"></i> <a th:href="${forecast.getAlerts().get(0).uri}" target="_blank"><span class="bold-span" th:text="${forecast.getAlerts().get(0).title}"></span></a>
+                Du <comment th:text="${forecast.getAlerts().get(0).time}" /> à <comment th:text="${forecast.getAlerts().get(0).expire}" />
             </div>
         </div>
         <br>
