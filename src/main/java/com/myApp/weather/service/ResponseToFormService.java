@@ -61,12 +61,8 @@ public class ResponseToFormService {
             Alert alert1 = new Alert()
                 .withTitle(alert.getTitle())
                 .withUri(alert.getUri())
-                .withTime(dateService.dateFromInstant(alert.getTime(), "dd/MM/yyyy hh:mm"));
-            if(alert.getExpire() != null){
-                alert1.withExpire(dateService.dateFromInstant(alert.getExpire(), "dd/MM/yyyy hh:mm"));
-            } else {
-                alert1.withExpire("not define");
-            }
+                .withTime(dateService.dateFromInstant(alert.getTime(), "dd/MM/yyyy hh:mm"))
+                .withExpire(dateService.dateFromInstant(alert.getExpires(), "dd/MM/yyyy hh:mm"));
             alertsList.add(alert1);
         }
         return alertsList;
