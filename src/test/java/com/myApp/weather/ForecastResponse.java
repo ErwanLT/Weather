@@ -1343,6 +1343,80 @@ public class ForecastResponse {
                     "      }\n" +
                     "    ]\n" +
                     "  },\n" +
+                    "alerts\": [\n" +
+                    "    {\n" +
+                    "      \"title\": \"Moderate Snow-ice Warning\",\n" +
+                    "      \"regions\": [\n" +
+                    "        \"County Carlow\",\n" +
+                    "        \"County Cavan\",\n" +
+                    "        \"County Clare\",\n" +
+                    "        \"County Cork\",\n" +
+                    "        \"County Donegal\",\n" +
+                    "        \"County Dublin\",\n" +
+                    "        \"County Galway\",\n" +
+                    "        \"County Kerry\",\n" +
+                    "        \"County Kildare\",\n" +
+                    "        \"County Kilkenny\",\n" +
+                    "        \"County Laois\",\n" +
+                    "        \"County Leitrim\",\n" +
+                    "        \"County Limerick\",\n" +
+                    "        \"County Longford\",\n" +
+                    "        \"County Louth\",\n" +
+                    "        \"County Mayo\",\n" +
+                    "        \"County Meath\",\n" +
+                    "        \"County Monaghan\",\n" +
+                    "        \"County Offaly\",\n" +
+                    "        \"County Roscommon\",\n" +
+                    "        \"County Sligo\",\n" +
+                    "        \"County Tipperary\",\n" +
+                    "        \"County Waterford\",\n" +
+                    "        \"County Westmeath\",\n" +
+                    "        \"County Wexford\",\n" +
+                    "        \"County Wicklow\"\n" +
+                    "      ],\n" +
+                    "      \"severity\": \"watch\",\n" +
+                    "      \"time\": 1552172401,\n" +
+                    "      \"expires\": 1552284001,\n" +
+                    "      \"description\": \"Scattered thundery showers of hail, sleet and snow expected during the period. Poor visibility, with slippery and icy conditions will occur at times.\\n\",\n" +
+                    "      \"uri\": \"https://www.met.ie/warnings\"\n" +
+                    "    },\n" +
+                    "    {\n" +
+                    "      \"title\": \"Moderate Snow-ice Warning\",\n" +
+                    "      \"regions\": [\n" +
+                    "        \"County Carlow\",\n" +
+                    "        \"County Cavan\",\n" +
+                    "        \"County Clare\",\n" +
+                    "        \"County Cork\",\n" +
+                    "        \"County Donegal\",\n" +
+                    "        \"County Dublin\",\n" +
+                    "        \"County Galway\",\n" +
+                    "        \"County Kerry\",\n" +
+                    "        \"County Kildare\",\n" +
+                    "        \"County Kilkenny\",\n" +
+                    "        \"County Laois\",\n" +
+                    "        \"County Leitrim\",\n" +
+                    "        \"County Limerick\",\n" +
+                    "        \"County Longford\",\n" +
+                    "        \"County Louth\",\n" +
+                    "        \"County Mayo\",\n" +
+                    "        \"County Meath\",\n" +
+                    "        \"County Monaghan\",\n" +
+                    "        \"County Offaly\",\n" +
+                    "        \"County Roscommon\",\n" +
+                    "        \"County Sligo\",\n" +
+                    "        \"County Tipperary\",\n" +
+                    "        \"County Waterford\",\n" +
+                    "        \"County Westmeath\",\n" +
+                    "        \"County Wexford\",\n" +
+                    "        \"County Wicklow\"\n" +
+                    "      ],\n" +
+                    "      \"severity\": \"watch\",\n" +
+                    "      \"time\": 1552172401,\n" +
+                    "      \"expires\": 1552284001,\n" +
+                    "      \"description\": \"Scattered thundery showers of hail, sleet and snow expected during the period. Poor visibility, with slippery and icy conditions, will occur at times.\\n\",\n" +
+                    "      \"uri\": \"https://www.met.ie/warnings\"\n" +
+                    "    }\n" +
+                    "  ]," +
                     "  \"flags\": {\n" +
                     "    \"sources\": [\n" +
                     "      \"nearest-precip\",\n" +

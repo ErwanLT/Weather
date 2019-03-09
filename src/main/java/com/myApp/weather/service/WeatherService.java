@@ -42,14 +42,19 @@ public class WeatherService {
 
     public ForecastResponse getForecast(String location){
 
-        String locationIQResponse = callApi(ApiUtils.getLocationiqUrl(location));
-        log.info(locationIQResponse);
-
-        if(locationIQResponse.isEmpty()){
-            log.debug("offline mode activate");
+        if(location.isEmpty()){
+            //ne devrait jamais arriver car champs obligatoire
             return getFakeForecast();
         } else {
-            return getForecast(getLatitude(locationIQResponse), getLongitude(locationIQResponse), getLocation(locationIQResponse));
+            String locationIQResponse = callApi(ApiUtils.getLocationiqUrl(location));
+            log.info(locationIQResponse);
+
+            if(locationIQResponse.isEmpty()){
+                log.debug("offline mode activate");
+                return getFakeForecast();
+            } else {
+                return getForecast(getLatitude(locationIQResponse), getLongitude(locationIQResponse), getLocation(locationIQResponse));
+            }
         }
     }
 

@@ -37,6 +37,7 @@ public class ResponseToFormServiceTest {
         assertThat(f.getCurrently()).isNotNull();
         assertThat(f.getWeek()).isNotNull();
         assertThat(f.getHours()).isNotNull();
+        assertThat(f.getAlerts()).isNotNull();
     }
 
 }
