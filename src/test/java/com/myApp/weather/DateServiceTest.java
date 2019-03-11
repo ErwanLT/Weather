@@ -20,6 +20,6 @@ public class DateServiceTest {
 
     @Test
     public void getDateFromInstantTest(){
-        assertThat(service.dateFromInstant(instant, "dd/mm/yyyy")).isEqualTo("30/04/2019");
+        assertThat(service.dateFromInstant(instant, "dd/mm/yyyy", "Europe/Paris")).isEqualTo("30/04/2019");
     }
 }

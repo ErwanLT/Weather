@@ -110,4 +110,9 @@ public class Daily {
         this.setTemperatureMin(temperatureMin);
         return this;
     }
+
+    public Daily withMoonPhase(double moonPhase){
+        this.setMoonPhase(moonPhase);
+        return this;
+    }
 }

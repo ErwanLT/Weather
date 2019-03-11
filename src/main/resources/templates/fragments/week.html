@@ -40,6 +40,16 @@
                                     <td class="td-width-lg">
                                         <img style="width:30px; height:30px" th:src="@{'./img/unitIcon/sunset.png'}"><comment th:text="${day.sunsetTime}" />
                                     </td>
+                                    <td class="td-width-lg">
+                                        <comment th:if="${day.moonPhase == 0}"><img style="width:30px; height:30px" th:src="@{'./img/moonPhase/moon1.png'}"></comment>
+                                        <comment th:if="${day.moonPhase > 0 and day.moonPhase < 0.25}"><img style="width:30px; height:30px" th:src="@{'./img/moonPhase/moon2.png'}"></comment>
+                                        <comment th:if="${day.moonPhase == 0.25}"><img style="width:30px; height:30px" th:src="@{'./img/moonPhase/moon3.png'}"></comment>
+                                        <comment th:if="${day.moonPhase > 0.25 and day.moonPhase < 0.5}"><img style="width:30px; height:30px" th:src="@{'./img/moonPhase/moon4.png'}"></comment>
+                                        <comment th:if="${day.moonPhase == 0.5}"><img style="width:30px; height:30px" th:src="@{'./img/moonPhase/moon5.png'}"></comment>
+                                        <comment th:if="${day.moonPhase > 0.5 and day.moonPhase < 0.75}"><img style="width:30px; height:30px" th:src="@{'./img/moonPhase/moon6.png'}"></comment>
+                                        <comment th:if="${day.moonPhase == 0.75}"><img style="width:30px; height:30px" th:src="@{'./img/moonPhase/moon7.png'}"></comment>
+                                        <comment th:if="${day.moonPhase > 0.75}"><img style="width:30px; height:30px" th:src="@{'./img/moonPhase/moon8.png'}"></comment>
+                                    </td>
                                 </tr>
                             </table>
                         </div>

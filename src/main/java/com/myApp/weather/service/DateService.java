@@ -30,12 +30,12 @@ import java.time.format.DateTimeFormatter;
 @Service
 public class DateService {
 
-    public String dateFromInstant(String i, String format){
+    public String dateFromInstant(String i, String format, String zoneId){
         long ltime = Long.parseLong(i) * 1000;
         Timestamp timestamp = new Timestamp(ltime);
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format)
-                .withZone(ZoneId.systemDefault());
+                .withZone(ZoneId.of(zoneId));
 
         return  formatter.format(timestamp.toLocalDateTime());
     }
