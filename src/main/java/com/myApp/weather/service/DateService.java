@@ -41,6 +41,8 @@ public class DateService {
 
     public static final String FORMAT_HH_MM = "hh:mm";
 
+    public static final String FORMAT_EEEE_D_MMM_YYYY = "EEEE, d MMM yyyy";
+
     public String dateFromInstant(String time, String format, String zoneId){
 
         DateTimeFormatter formatter =

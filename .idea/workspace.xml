@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="48d2eebf-35d2-48ce-b5b0-ee22dd63aba0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/ResponseToFormService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/ResponseToFormService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/ForecastResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/ForecastResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/DateServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/DateServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,11 +47,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/DateServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/ForecastResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="1418" column="25" selection-start-line="1418" selection-start-column="25" selection-end-line="1418" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/ResponseToFormServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/GsonServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -145,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/WeatherApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/HourlyData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/Hourly.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/DailyData.java" />
@@ -196,6 +221,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/myApp/weather/DateServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/ResponseToFormService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DateService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/myApp/weather/GsonServiceTest.java" />
       </list>
     </option>
   </component>
@@ -317,7 +343,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552414771066" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552415400994" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -356,7 +382,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Whole project">
+  <component name="RunManager" selected="Spring Boot.WeatherApplication">
     <configuration name="DateServiceTest.getDateFromInstantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="weather" />
       <extension name="coverage">
@@ -509,7 +535,7 @@
       <workItem from="1549126475650" duration="5101000" />
       <workItem from="1549540711855" duration="1107000" />
       <workItem from="1549617255737" duration="344000" />
-      <workItem from="1549628993002" duration="38677000" />
+      <workItem from="1549628993002" duration="39184000" />
     </task>
     <task id="LOCAL-00001" summary="add form and test">
       <created>1543262679140</created>
@@ -847,19 +873,17 @@
       <option name="project" value="LOCAL" />
       <updated>1552393205273</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="revert on date service change">
+      <created>1552414835779</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1552414835779</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Whole_project - 2019.03.04 at 19h 24m 34s.xml">
-      <configuration name="Whole project" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Whole_project - 2019.03.04 at 19h 29m 39s.xml">
-      <configuration name="Whole project" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Whole_project - 2019.03.04 at 19h 31m 04s.xml">
-      <configuration name="Whole project" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Whole_project - 2019.03.05 at 13h 26m 30s.xml">
       <configuration name="Whole project" configurationId="JUnit" />
     </history-entry>
@@ -881,9 +905,18 @@
     <history-entry file="Whole_project - 2019.03.09 at 15h 45m 24s.xml">
       <configuration name="Whole project" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DateServiceTest_getDateFromInstantTest - 2019.03.12 at 19h 17m 38s.xml">
+      <configuration name="DateServiceTest.getDateFromInstantTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GsonServiceTest - 2019.03.12 at 19h 19m 23s.xml">
+      <configuration name="GsonServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Whole_project - 2019.03.12 at 19h 19m 39s.xml">
+      <configuration name="Whole project" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45522000" />
+    <option name="totallyTimeSpent" value="46029000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -896,9 +929,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="816" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6583851" visible="true" weight="0.31473532" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6583851" visible="true" weight="0.31473532" />
       <window_info id="Structure" order="1" sideWeight="0.3416149" side_tool="true" weight="0.2639485" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -909,13 +941,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.3218232" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" visible="true" weight="0.39779004" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.39779004" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32825485" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32596686" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50143063" side_tool="true" weight="0.26933703" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4985694" weight="0.26933703" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.4985694" visible="true" weight="0.26933703" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32596686" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -979,7 +1011,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test 500 without thymeleaf for heroku deployment" />
     <MESSAGE value="test correction controller for heroku deployment" />
     <MESSAGE value="add font awesome icon and code cleaning" />
     <MESSAGE value="add location in displayed information" />
@@ -1004,7 +1035,8 @@
     <MESSAGE value="add test coverage" />
     <MESSAGE value="add moon phase to display, change in date formatter" />
     <MESSAGE value="change date service" />
-    <option name="LAST_COMMIT_MESSAGE" value="change date service" />
+    <MESSAGE value="revert on date service change" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert on date service change" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -1192,13 +1224,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180813.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/ForecastResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="1418" column="25" selection-start-line="1418" selection-start-column="25" selection-end-line="1418" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/help.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -1206,30 +1231,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/ResponseToFormServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="39" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/WeatherServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/GsonServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1401,6 +1406,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/ForecastResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="1418" column="25" selection-start-line="1418" selection-start-column="25" selection-end-line="1418" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/ResponseToFormServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/GsonServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>
