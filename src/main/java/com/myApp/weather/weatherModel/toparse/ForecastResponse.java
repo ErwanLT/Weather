@@ -43,6 +43,8 @@ public class ForecastResponse {
 
     private double longitude;
 
+    private String timezone;
+
     private String location;
 
     /**

@@ -21,13 +21,40 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 package com.myApp.weather.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+
 @Service
+@Slf4j
 public class DateService {
 
-    public String dateFromInstant(String i, String format){
-        
-        return new java.text.SimpleDateFormat(format).format(new java.util.Date (Long.parseLong(i) * 1000 + 60*60));
+
+    public static final String FORMAT_DD_MM_YYYY = "dd/MM/yyyy";
+
+    public static final String FORMAT_DD_MM_YYYY_HH_MM = "dd/MM/yyyy hh:mm";
+
+    public static final String FORMAT_DD_MM_YYYY_HH = "dd/MM/yyyy HH";
+
+    public static final String FORMAT_HH_MM = "hh:mm";
+
+    public String dateFromInstant(String time, String format, String zoneId){
+
+        DateTimeFormatter formatter =
+                DateTimeFormatter.ofPattern(format);
+
+        ZoneId zone = ZoneId.of(zoneId);
+
+        long unixTime = Long.parseLong(time);
+        String formattedDtm = Instant.ofEpochSecond(unixTime)
+                .atZone(zone)
+                .format(formatter);
+
+        log.info(time +" = " + formattedDtm);
+
+        return formattedDtm;
     }
 }

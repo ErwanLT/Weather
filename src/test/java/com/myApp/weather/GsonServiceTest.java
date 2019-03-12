@@ -58,6 +58,7 @@ public class GsonServiceTest {
     private void checkForecast(ForecastResponse f) {
         assertThat(f.getLatitude()).isEqualTo(15);
         assertThat(f.getLongitude()).isEqualTo(16);
+        assertThat(f.getTimezone()).isEqualTo("Africa/Ndjamena");
         assertThat(f.getCurrently()).isNotNull();
         assertThat(f.getDaily()).isNotNull();
 
