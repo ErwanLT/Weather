@@ -23,24 +23,11 @@ package com.myApp.weather.service;
 
 import org.springframework.stereotype.Service;
 
-import java.sql.Timestamp;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
-
 @Service
 public class DateService {
 
-    public String dateFromInstant(String i, String format, String zoneId){
-               
-        long ltime = Long.parseLong(i) * 1000;
+    public String dateFromInstant(String i, String format){
         
-        //String date = new java.text.SimpleDateFormat(format).format(new java.util.Date (ltime));
-        
-        Timestamp timestamp = new Timestamp(ltime);
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format)
-                .withZone(ZoneId.of(zoneId));
-
-        return  formatter.format(timestamp.toLocalDateTime());
+        return new java.text.SimpleDateFormat(format).format(new java.util.Date (Long.parseLong(i) * 1000));
     }
 }

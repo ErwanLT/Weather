@@ -37,13 +37,9 @@ public class ResponseToFormService {
     @Autowired
     private DateService dateService;
 
-    private String timezone;
-
     public Forecast darkskyResponseToForm(ForecastResponse responseForecast){
 
         Forecast f = new Forecast();
-
-        timezone = responseForecast.getTimezone();
 
         f.setLocation(responseForecast.getLocation());
         f.setCurrently(getResponseDaily(responseForecast.getCurrently()));
@@ -65,8 +61,8 @@ public class ResponseToFormService {
             Alert alert1 = new Alert()
                 .withTitle(alert.getTitle())
                 .withUri(alert.getUri())
-                .withTime(dateService.dateFromInstant(alert.getTime(), "dd/MM/yyyy hh:mm", timezone))
-                .withExpire(dateService.dateFromInstant(alert.getExpires(), "dd/MM/yyyy hh:mm", timezone));
+                .withTime(dateService.dateFromInstant(alert.getTime(), "dd/MM/yyyy hh:mm"))
+                .withExpire(dateService.dateFromInstant(alert.getExpires(), "dd/MM/yyyy hh:mm"));
             alertsList.add(alert1);
         }
         return alertsList;
@@ -78,7 +74,7 @@ public class ResponseToFormService {
         for (com.myApp.weather.weatherModel.toparse.HourlyData data:
              hourly.getData()) {
             hours.add(new Hourly()
-                .withTime(dateService.dateFromInstant(data.getTime(), "dd/MM/yyyy HH", timezone))
+                .withTime(dateService.dateFromInstant(data.getTime(), "dd/MM/yyyy HH"))
                 .withSummary(data.getSummary())
                 .withIcon(data.getIcon())
                 .withTemperature((int) Math.round(data.getTemperature()))
@@ -115,11 +111,11 @@ public class ResponseToFormService {
         for (com.myApp.weather.weatherModel.toparse.DailyData data: daily.getData()) {
             week.add(new Daily()
             .withId(id)
-            .withTime(dateService.dateFromInstant(data.getTime(), "dd/MM/yyyy", timezone))
+            .withTime(dateService.dateFromInstant(data.getTime(), "dd/MM/yyyy"))
             .withIcon(data.getIcon())
             .withSummary(data.getSummary())
-            .withSunriseTime(dateService.dateFromInstant(data.getSunriseTime(), "HH:mm", timezone))
-            .withSunsetTime(dateService.dateFromInstant(data.getSunsetTime(), "HH:mm", timezone))
+            .withSunriseTime(dateService.dateFromInstant(data.getSunriseTime(), "HH:mm"))
+            .withSunsetTime(dateService.dateFromInstant(data.getSunsetTime(), "HH:mm"))
             .withTemperatureMax((int) Math.round(data.getTemperatureMax()))
             .withTemperatureMin((int) Math.round(data.getTemperatureMin()))
             .withMoonPhase(data.getMoonPhase()));
