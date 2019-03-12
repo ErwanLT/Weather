@@ -28,6 +28,6 @@ public class DateService {
 
     public String dateFromInstant(String i, String format){
         
-        return new java.text.SimpleDateFormat(format).format(new java.util.Date (Long.parseLong(i) * 1000));
+        return new java.text.SimpleDateFormat(format).format(new java.util.Date (Long.parseLong(i) * 1000 + 60*60));
     }
 }
