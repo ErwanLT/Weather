@@ -115,7 +115,7 @@ public class ResponseToFormService {
         for (com.myApp.weather.weatherModel.toparse.DailyData data: daily.getData()) {
             week.add(new Daily()
             .withId(id)
-            .withTime(dateService.dateFromInstant(data.getTime(), dateService.FORMAT_EEEE_D_MMM_YYYY, timezone))
+            .withTime(dateService.dateFromInstant(data.getTime(), dateService.FORMAT_D_MMM_YYYY, timezone))
             .withIcon(data.getIcon())
             .withSummary(data.getSummary())
             .withSunriseTime(dateService.dateFromInstant(data.getSunriseTime(), dateService.FORMAT_HH_MM, timezone))
