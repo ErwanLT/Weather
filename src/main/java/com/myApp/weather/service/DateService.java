@@ -31,7 +31,11 @@ import java.time.format.DateTimeFormatter;
 public class DateService {
 
     public String dateFromInstant(String i, String format, String zoneId){
+               
         long ltime = Long.parseLong(i) * 1000;
+        
+        //String date = new java.text.SimpleDateFormat(format).format(new java.util.Date (ltime));
+        
         Timestamp timestamp = new Timestamp(ltime);
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format)
