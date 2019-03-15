@@ -28,10 +28,9 @@ import lombok.*;
  * @author eletutour
  * @since 1.0.0
  */
-@Data
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
-@AllArgsConstructor
 public class DailyData {
 
     private String time;

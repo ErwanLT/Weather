@@ -115,6 +115,17 @@ public class GsonServiceTest {
         assertThat(dailyData.getUvIndex()).isNotNull();
         assertThat(dailyData.getVisibility()).isNotNull();
         assertThat(dailyData.getOzone()).isNotNull();
+        assertThat(dailyData.getTemperatureHighTime()).isNotNull();
+        assertThat(dailyData.getTemperatureLowTime()).isNotNull();
+        assertThat(dailyData.getApparentTemperatureHighTime()).isNotNull();
+        assertThat(dailyData.getApparentTemperatureLowTime()).isNotNull();
+        assertThat(dailyData.getTemperatureMinTime()).isNotNull();
+        assertThat(dailyData.getTemperatureMaxTime()).isNotNull();
+        assertThat(dailyData.getWindGustTime()).isNotNull();
+        assertThat(dailyData.getUvIndexTime()).isNotNull();
+        assertThat(dailyData.getApparentTemperatureMinTime()).isNotNull();
+        assertThat(dailyData.getApparentTemperatureMaxTime()).isNotNull();
+
     }
 
     private void checkHourly(Hourly hourly) {

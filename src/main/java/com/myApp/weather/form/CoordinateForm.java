@@ -21,7 +21,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 package com.myApp.weather.form;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -31,8 +30,8 @@ import lombok.Setter;
  * @author ewanletutour
  * @since 1.0.0
  */
-@Data
-@Getter @Setter
+@Getter
+@Setter
 public class CoordinateForm {
 
     private String location;

@@ -23,11 +23,9 @@ package com.myApp.weather.form;
 
 import lombok.*;
 
-@Data
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 public class Hourly {
 
     private String time;

@@ -33,10 +33,9 @@ import java.util.List;
  * @author eletutour
  * @since 1.0.0
  */
-@Data
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
-@AllArgsConstructor
 public class ForecastResponse {
 
     private double latitude;

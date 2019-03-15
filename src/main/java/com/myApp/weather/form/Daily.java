@@ -23,10 +23,9 @@ package com.myApp.weather.form;
 
 import lombok.*;
 
-@Data
-@Getter @Setter
+@Getter
+@Setter
 @NoArgsConstructor
-@AllArgsConstructor
 public class Daily {
 
     private int id;

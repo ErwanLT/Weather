@@ -21,12 +21,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 package com.myApp.weather.weatherModel.toparse;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-@Data
-@Getter @Setter
+@Getter
+@Setter
 public class HourlyData {
 
     private String time;
