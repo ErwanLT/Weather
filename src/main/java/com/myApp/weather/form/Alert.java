@@ -8,10 +8,8 @@ import lombok.*;
 public class Alert {
 
     private String title;
-    private String severity;
     private String time;
     private String expire;
-    private String description;
     private String uri;
 
     public Alert withTitle(String title){

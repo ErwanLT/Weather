@@ -48,4 +48,19 @@ public class HttpRequestTests {
                 .andExpect(status().isNotFound());
     }
 
+    @Test
+    public void shouldReturnHelpPage() throws Exception {
+        this.mockMvc.perform(get("/help"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(content().string(containsString("<title>Help</title>")));
+    }
+
+    @Test
+    public void shouldReturnHistoryPage() throws Exception {
+        this.mockMvc.perform(get("/history"))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(content().string(containsString("<title>History</title>")));
+    }
 }

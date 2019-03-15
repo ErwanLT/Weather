@@ -33,14 +33,7 @@ public class Hourly {
     private String icon;
     private int temperature;
     private int apparentTemperature;
-    private String dewPoint;
     private int precipProbability;
-    private double humidity;
-    private double pressure;
-    private double windSpeed;
-    private double uvIndex;
-    private double visibility;
-    private double ozone;
 
 
     public Hourly withTime(String time){
@@ -65,41 +58,6 @@ public class Hourly {
 
     public Hourly withApparentTemperature(int apparentTemperature){
         this.setApparentTemperature(apparentTemperature);
-        return this;
-    }
-
-    public Hourly withDewPoint(String dewPoint){
-        this.setDewPoint(dewPoint);
-        return this;
-    }
-
-    public Hourly withHumidity(double humidity){
-        this.setHumidity(humidity);
-        return this;
-    }
-
-    public Hourly withPressure(double pressure){
-        this.setPressure(pressure);
-        return this;
-    }
-
-    public Hourly withWindSpeed(double windSpeed){
-        this.setWindSpeed(windSpeed);
-        return this;
-    }
-
-    public Hourly withUVIndex(double uvIndex){
-        this.setUvIndex(uvIndex);
-        return this;
-    }
-
-    public Hourly withVisibility(double visibility){
-        this.setVisibility(visibility);
-        return this;
-    }
-
-    public Hourly withOzone(double ozone){
-        this.setOzone(ozone);
         return this;
     }
 
