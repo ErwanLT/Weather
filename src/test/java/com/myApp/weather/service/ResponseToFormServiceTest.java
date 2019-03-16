@@ -1,4 +1,4 @@
-package com.myApp.weather;
+package com.myApp.weather.service;
 
 import com.myApp.weather.form.*;
 import com.myApp.weather.service.GsonService;

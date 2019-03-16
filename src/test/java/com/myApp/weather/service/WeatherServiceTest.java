@@ -1,4 +1,4 @@
-package com.myApp.weather;
+package com.myApp.weather.service;
 
 import com.myApp.weather.service.WeatherService;
 import com.myApp.weather.weatherModel.toparse.ForecastResponse;
