@@ -30,7 +30,6 @@ import com.myApp.weather.weatherModel.toparse.ForecastResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -82,7 +81,7 @@ public class WeatherController {
     }
 
     @PostMapping("/getWeather")
-    public String getWeather(@ModelAttribute("coordinateForm")CoordinateForm coordinateForm, Model model, Errors errors){
+    public String getWeather(@ModelAttribute("coordinateForm")CoordinateForm coordinateForm, Model model){
 
         CoordinateForm form = new CoordinateForm();
         model.addAttribute(form);

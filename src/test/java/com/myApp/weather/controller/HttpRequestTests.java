@@ -1,4 +1,4 @@
-package com.myApp.weather;
+package com.myApp.weather.controller;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
