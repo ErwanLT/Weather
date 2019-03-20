@@ -21,13 +21,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 package com.myApp.weather.service;
 
-import com.myApp.weather.utils.ApiUtils;
 import com.myApp.weather.utils.FakeForecastUtils;
 import com.myApp.weather.weatherModel.toparse.ForecastResponse;
 import lombok.extern.slf4j.Slf4j;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,8 +33,18 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class WeatherService {
 
+    private final GsonService gsonService;
+
+    private final DarkSkyService darkSkyService;
+
+    private final LocationIQService locationIQService;
+
     @Autowired
-    private GsonService gsonService;
+    public WeatherService(GsonService gsonService, DarkSkyService darkSkyService, LocationIQService locationIQService){
+        this.gsonService = gsonService;
+        this.darkSkyService = darkSkyService;
+        this.locationIQService = locationIQService;
+    }
 
     public ForecastResponse getForecast(String location){
 
@@ -46,7 +52,7 @@ public class WeatherService {
             //ne devrait jamais arriver car champs obligatoire
             return getFakeForecast();
         } else {
-            String locationIQResponse = callApi(ApiUtils.getLocationiqUrl(location));
+            String locationIQResponse = locationIQService.callApi(location);
             log.info(locationIQResponse);
 
             if(locationIQResponse.isEmpty()){
@@ -87,7 +93,7 @@ public class WeatherService {
 
         ForecastResponse forecast;
 
-        String darkSkyResponse = callApi(ApiUtils.getDarkSkyUrl(latitude,longitude));
+        String darkSkyResponse = darkSkyService.callApi(latitude, longitude);
         log.info(darkSkyResponse);
 
         forecast = gsonService.stringToForecast(darkSkyResponse);
@@ -96,19 +102,4 @@ public class WeatherService {
         return forecast;
     }
 
-    private String callApi(String Uri){
-        OkHttpClient client = new OkHttpClient();
-        try{
-            Request request = new Request.Builder()
-                    .url(Uri)
-                    .build();
-
-            Response response = client.newCall(request).execute();
-
-            return response.body().string();
-        } catch (Exception e){
-            log.debug("error : ", e);
-        }
-        return "";
-    }
 }

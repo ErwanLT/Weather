@@ -1,6 +1,5 @@
 package com.myApp.weather.service;
 
-import com.myApp.weather.service.WeatherService;
 import com.myApp.weather.weatherModel.toparse.ForecastResponse;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,7 +17,7 @@ public class WeatherServiceTest {
     WeatherService service;
 
     @Test
-    public void test_offline() throws Exception {
+    public void test_offline() {
         ForecastResponse response = service.getForecast("");
         assertThat(response).isNotNull();
         assertThat(response.getCurrently()).isNotNull();

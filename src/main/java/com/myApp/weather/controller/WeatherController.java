@@ -44,11 +44,17 @@ import org.thymeleaf.util.StringUtils;
  */
 public class WeatherController {
 
-    @Autowired
-    private WeatherService weatherService;
+
+    private final WeatherService weatherService;
+
+
+    private final ResponseToFormService responseToForm;
 
     @Autowired
-    private ResponseToFormService responseToForm;
+    public WeatherController(WeatherService weatherService, ResponseToFormService responseToForm){
+        this.weatherService = weatherService;
+        this.responseToForm = responseToForm;
+    }
 
     @GetMapping("/")
     public String index(Model model) {

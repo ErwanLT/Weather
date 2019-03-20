@@ -34,8 +34,13 @@ import java.util.List;
 @Slf4j
 public class ResponseToFormService {
 
+
+    private final DateService dateService;
+
     @Autowired
-    private DateService dateService;
+    public ResponseToFormService(DateService dateService){
+        this.dateService = dateService;
+    }
 
     private String timezone;
 
