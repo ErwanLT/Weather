@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48d2eebf-35d2-48ce-b5b0-ee22dd63aba0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DarkSkyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/LocationIQService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/LocationIQResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/ResponseToFormService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/ResponseToFormService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/WeatherControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/WeatherControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/service/WeatherServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/service/WeatherServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/myApp/weather/controller/WeatherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/myApp/weather/controller/WeatherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weather.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +31,7 @@
     <SUITE FILE_PATH="coverage/weather$Whole_project.ic" NAME="Whole project Coverage Results" MODIFIED="1552911203056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.myApp.weather.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/weather$All_in_weather.ic" NAME="All in weather Coverage Results" MODIFIED="1553060750629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/weather$All_in_weather.ic" NAME="All in weather Coverage Results" MODIFIED="1553083830672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CoverageViewManager">
     <option name="myFlattenPackages" value="true" />
@@ -45,11 +40,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/WeatherControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="105" column="40" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="40" />
+            <state relative-caret-position="1230">
+              <caret line="82" column="101" selection-start-line="82" selection-start-column="101" selection-end-line="82" selection-end-column="101" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/ForecastResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="76" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -57,58 +64,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="174">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/ResponseToFormService.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/LocationIQResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1574#1575#0" expanded="true" />
-                <element signature="e#1619#1620#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/LocationIQService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/WeatherControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -156,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/utils/FakeResponseDarkSky.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/utils/FakeForecastUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/fragments/components.html" />
@@ -206,6 +171,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DarkSkyService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/ResponseToFormService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/myApp/weather/LocationIQResponse.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/WeatherControllerTest.java" />
       </list>
     </option>
@@ -312,6 +278,14 @@
               <item name="weather" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="weather" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Weather" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="weather" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -328,7 +302,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553060748791" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553083827069" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -427,21 +401,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Whole project" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WeatherControllerTest.testResponse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="weather" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myApp.weather.service.*" />
+          <option name="PATTERN" value="com.myApp.weather.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myApp.weather" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="PARAMETERS" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
+      <option name="PACKAGE_NAME" value="com.myApp.weather.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.myApp.weather.controller.WeatherControllerTest" />
+      <option name="METHOD_NAME" value="testResponse" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -500,21 +471,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Whole project" />
       <item itemvalue="JUnit.All in weather" />
       <item itemvalue="JUnit.WeatherControllerTest" />
       <item itemvalue="JUnit.WeatherControllerTest.testFakeResponse" />
       <item itemvalue="JUnit.com.myApp.weather.service in weather" />
       <item itemvalue="Maven.clean install" />
       <item itemvalue="Spring Boot.WeatherApplication" />
+      <item itemvalue="JUnit.WeatherControllerTest.testResponse" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in weather" />
-        <item itemvalue="JUnit.WeatherControllerTest" />
+        <item itemvalue="JUnit.WeatherControllerTest.testResponse" />
         <item itemvalue="JUnit.WeatherControllerTest.testFakeResponse" />
+        <item itemvalue="JUnit.WeatherControllerTest" />
         <item itemvalue="JUnit.com.myApp.weather.service in weather" />
-        <item itemvalue="JUnit.Whole project" />
       </list>
     </recent_temporary>
   </component>
@@ -534,13 +505,6 @@
       <workItem from="1549617255737" duration="344000" />
       <workItem from="1549628993002" duration="40230000" />
       <workItem from="1552417187187" duration="8717000" />
-    </task>
-    <task id="LOCAL-00008" summary="modification of the data model&#10;add gson deserialization of api response&#10;add test for the deserialization">
-      <created>1544249734166</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1544249734166</updated>
     </task>
     <task id="LOCAL-00009" summary="add test for GsonService">
       <created>1544466101099</created>
@@ -878,43 +842,50 @@
       <option name="project" value="LOCAL" />
       <updated>1552723944958</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="add test">
+      <created>1553060837574</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1553060837574</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.19 at 13h 30m 48s.xml">
-      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.19 at 21h 17m 12s.xml">
-      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.19 at 21h 20m 04s.xml">
-      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.19 at 21h 34m 11s.xml">
-      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.19 at 21h 42m 33s.xml">
-      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.19 at 21h 43m 38s.xml">
-      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_myApp_weather_service_in_weather - 2019.03.20 at 06h 35m 11s.xml">
-      <configuration name="com.myApp.weather.service in weather" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.20 at 06h 37m 39s.xml">
-      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.20 at 06h 40m 01s.xml">
-      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WeatherControllerTest - 2019.03.20 at 06h 42m 55s.xml">
+    <history-entry file="WeatherControllerTest - 2019.03.20 at 06h 44m 12s.xml">
       <configuration name="WeatherControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_weather - 2019.03.20 at 06h 44m 31s.xml">
+      <configuration name="All in weather" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_weather - 2019.03.20 at 06h 45m 00s.xml">
+      <configuration name="All in weather" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_weather - 2019.03.20 at 06h 46m 05s.xml">
+      <configuration name="All in weather" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.20 at 12h 56m 03s.xml">
+      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.20 at 12h 57m 24s.xml">
+      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherControllerTest_testFakeResponse - 2019.03.20 at 12h 58m 16s.xml">
+      <configuration name="WeatherControllerTest.testFakeResponse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_weather - 2019.03.20 at 13h 01m 10s.xml">
+      <configuration name="All in weather" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherControllerTest_testResponse - 2019.03.20 at 13h 05m 22s.xml">
+      <configuration name="WeatherControllerTest.testResponse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WeatherControllerTest_testResponse - 2019.03.20 at 13h 06m 32s.xml">
+      <configuration name="WeatherControllerTest.testResponse" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60219000" />
+    <option name="totallyTimeSpent" value="61702000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -927,8 +898,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="816" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6583851" visible="true" weight="0.3190272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6583851" visible="true" weight="0.3190272" />
       <window_info id="Structure" order="1" sideWeight="0.3416149" side_tool="true" weight="0.2639485" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -938,8 +910,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4985694" visible="true" weight="0.3218232" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.39779004" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.3218232" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" visible="true" weight="0.39779004" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32825485" />
@@ -959,7 +931,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.3297568" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Maven" order="9" />
       <window_info anchor="right" id="Database" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.3297568" />
@@ -1040,46 +1012,10 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/WeatherControllerTest.java</url>
-          <line>80</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java</url>
-          <line>54</line>
+          <line>55</line>
           <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java</url>
-          <line>95</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java</url>
-          <line>101</line>
-          <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1112,17 +1048,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/time/ZoneId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2050">
-          <caret line="357" column="25" selection-start-line="357" selection-start-column="25" selection-end-line="357" selection-end-column="25" />
-          <folding>
-            <element signature="e#15593#15594#0" expanded="true" />
-            <element signature="e#15632#15633#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/HourlyData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1182,13 +1107,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/ForecastResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2198">
-          <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -1275,14 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar!/org/assertj/core/api/AbstractCharSequenceAssert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1308,13 +1218,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-396">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/utils/ApiUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1465,23 +1368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DarkSkyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/ResponseToFormService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -1496,18 +1382,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/LocationIQService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="167">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1521,10 +1397,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DarkSkyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/utils/ApiUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/ForecastResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="76" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/LocationIQResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/WeatherControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+        <state relative-caret-position="1230">
+          <caret line="82" column="101" selection-start-line="82" selection-start-column="101" selection-end-line="82" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
