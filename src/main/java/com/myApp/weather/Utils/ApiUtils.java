@@ -21,23 +21,29 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.*/
 package com.myApp.weather.utils;
 
+import lombok.extern.slf4j.Slf4j;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
+@Slf4j
 public class ApiUtils {
 
-    private static final String DARK_SKY_KEY = System.getenv("DARKSKY_KEY");
+    public static final String DARK_SKY_KEY = System.getenv("DARKSKY_KEY");
 
-    private static final String DARK_SKY_URL = "https://api.darksky.net/forecast/";
+    public static final String DARK_SKY_URL = "https://api.darksky.net/forecast/";
 
-    private static final String DARK_SKY_SI_UNIT = "&units=si";
+    public static final String DARK_SKY_SI_UNIT = "&units=si";
 
-    private static final String DARK_SKY_LANG = "?lang=fr";
+    public static final String DARK_SKY_LANG = "?lang=fr";
 
-    private static final String DARK_SKY_EXCLUDE = "&exclude=minutely";
+    public static final String DARK_SKY_EXCLUDE = "&exclude=minutely";
 
-    private static final String LOCATIONIQ_KEY = System.getenv("LOCATIONIQ_KEY");
+    public static final String LOCATIONIQ_KEY = System.getenv("LOCATIONIQ_KEY");
 
-    private static final String LOCATIONIQ_URL1 = "https://eu1.locationiq.com/v1/search.php?key=";
+    public static final String LOCATIONIQ_URL1 = "https://eu1.locationiq.com/v1/search.php?key=";
 
-    private static final String LOCATIONIQ_URL2 = "&format=json&accept-language=fr";
+    public static final String LOCATIONIQ_URL2 = "&format=json&accept-language=fr";
 
     public static String getDarkSkyUrl(String latitude, String longitude){
 
@@ -46,5 +52,22 @@ public class ApiUtils {
 
     public static String getLocationiqUrl(String location){
         return LOCATIONIQ_URL1 + LOCATIONIQ_KEY + "&q=" + location + LOCATIONIQ_URL2;
+    }
+
+    public String callApi(String url) {
+
+        OkHttpClient client = new OkHttpClient();
+        try{
+            Request request = new Request.Builder()
+                    .url(url)
+                    .build();
+
+            Response response = client.newCall(request).execute();
+
+            return response.body().string();
+        } catch (Exception e){
+            log.debug("error : ", e);
+        }
+        return "";
     }
 }

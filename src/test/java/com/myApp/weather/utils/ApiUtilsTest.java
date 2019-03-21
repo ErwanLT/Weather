@@ -15,12 +15,18 @@ public class ApiUtilsTest {
     @Test
     public void testDArkKSyUrl(){
         String url = getDarkSkyUrl("test", "test");
-        assertThat(url).isNotNull().startsWith("https://api.darksky.net/forecast/").endsWith("&exclude=minutely");
+        assertThat(url).isNotNull()
+            .contains(DARK_SKY_URL)
+            .contains(DARK_SKY_LANG)
+            .contains(DARK_SKY_SI_UNIT)
+            .contains(DARK_SKY_EXCLUDE);
     }
 
     @Test
     public void testLocationIQUrl(){
         String url = getLocationiqUrl("Paris");
-        assertThat(url).isNotNull().startsWith("https://eu1.locationiq.com/v1/search.php");
+        assertThat(url).isNotNull()
+            .contains(LOCATIONIQ_URL1)
+            .contains(LOCATIONIQ_URL2);
     }
 }
