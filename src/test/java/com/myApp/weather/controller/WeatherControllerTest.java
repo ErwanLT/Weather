@@ -1,5 +1,6 @@
 package com.myApp.weather.controller;
 
+import com.myApp.weather.CommonForTest;
 import com.myApp.weather.ForecastResponse;
 import com.myApp.weather.LocationIQResponse;
 import com.myApp.weather.form.CoordinateForm;
@@ -28,24 +29,12 @@ import static org.mockito.Mockito.when;
 @SpringBootTest
 @AutoConfigureMockMvc
 @ComponentScan("com.myApp.weather")
-public class WeatherControllerTest {
+public class WeatherControllerTest extends CommonForTest {
 
     @Autowired
     WeatherController weatherController;
 
     CoordinateForm form;
-
-    WeatherService weatherService;
-
-    ResponseToFormService responseToFormService;
-
-    GsonService gsonService;
-
-    DarkSkyService darkSkyService;
-
-    LocationIQService locationIQService;
-
-    DateService dateService;
 
     @Before
     public void setUp(){
@@ -91,6 +80,11 @@ public class WeatherControllerTest {
 
         Forecast f = (Forecast) ((BindingAwareModelMap) model).get("forecast");
         assertThat(f).isNotNull();
+
+        chechCurrently(f.getCurrently());
+        checkWeek(f.getWeek());
+        checkHours(f.getHours());
+        checkAlerts(f.getAlerts());
     }
 
     private CoordinateForm initForm(){
@@ -117,5 +111,10 @@ public class WeatherControllerTest {
 
         Forecast f = (Forecast) ((BindingAwareModelMap) model).get("forecast");
         assertThat(f).isNotNull();
+
+        chechCurrently(f.getCurrently());
+        checkWeek(f.getWeek());
+        checkHours(f.getHours());
+        checkAlerts(f.getAlerts());
     }
 }
