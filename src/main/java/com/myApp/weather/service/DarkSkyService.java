@@ -11,6 +11,6 @@ public class DarkSkyService extends ApiUtils {
     public String callApi(String latitude, String longitude) {
         String darkSkyUrl = ApiUtils.getDarkSkyUrl(latitude,longitude);
 
-        return callApi(darkSkyUrl);
+        return callApiWithUrl(darkSkyUrl);
     }
 }

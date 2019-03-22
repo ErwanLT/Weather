@@ -12,6 +12,6 @@ public class LocationIQService extends ApiUtils{
 
         String locationiqUrl = ApiUtils.getLocationiqUrl(location);
 
-        return callApi(locationiqUrl);
+        return ApiUtils.callApiWithUrl(locationiqUrl);
     }
 }

@@ -54,7 +54,7 @@ public class ApiUtils {
         return LOCATIONIQ_URL1 + LOCATIONIQ_KEY + "&q=" + location + LOCATIONIQ_URL2;
     }
 
-    public String callApi(String url) {
+    public static String callApiWithUrl(String url) {
 
         OkHttpClient client = new OkHttpClient();
         try{
