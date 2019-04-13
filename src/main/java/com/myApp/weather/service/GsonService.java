@@ -23,6 +23,7 @@ package com.myApp.weather.service;
 
 import com.google.gson.Gson;
 import com.myApp.weather.weatherModel.toparse.ForecastResponse;
+import com.myApp.weather.weatherModel.toparse.LocationData;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -35,5 +36,11 @@ public class GsonService {
 
         return g.fromJson(darkSkyResponse, ForecastResponse.class);
 
+    }
+
+    public LocationData[] stringToLocations(String locationIQResponse){
+        Gson g = new Gson();
+
+        return g.fromJson(locationIQResponse, LocationData[].class);
     }
 }

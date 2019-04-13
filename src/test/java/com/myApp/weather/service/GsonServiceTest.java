@@ -1,7 +1,9 @@
 package com.myApp.weather.service;
 
 import com.myApp.weather.CommonForTest;
+import com.myApp.weather.LocationIQResponse;
 import com.myApp.weather.weatherModel.toparse.ForecastResponse;
+import com.myApp.weather.weatherModel.toparse.LocationData;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,9 +19,12 @@ public class GsonServiceTest extends CommonForTest {
 
     private String darkskyResponse;
 
+    private String locationIQResponse;
+
     @Before
     public void setUp(){
         darkskyResponse = com.myApp.weather.ForecastResponse.darkSkyResponse;
+        locationIQResponse = LocationIQResponse.locationIQResponse;
     }
 
 
@@ -48,6 +53,12 @@ public class GsonServiceTest extends CommonForTest {
         checkToParseHourly(f.getHourly());
         //
         checkToParseAlerts(f.getAlerts());
+    }
+
+    @Test
+    public void deserializeLocationIQResponse(){
+        LocationData[] l = gsonService.stringToLocations(locationIQResponse);
+        assertThat(l).isNotNull();
     }
 
 }

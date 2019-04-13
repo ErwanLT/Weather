@@ -23,9 +23,8 @@ package com.myApp.weather.service;
 
 import com.myApp.weather.utils.FakeForecastUtils;
 import com.myApp.weather.weatherModel.toparse.ForecastResponse;
+import com.myApp.weather.weatherModel.toparse.LocationData;
 import lombok.extern.slf4j.Slf4j;
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -59,7 +58,9 @@ public class WeatherService {
                 log.debug("offline mode activate");
                 return getFakeForecast();
             } else {
-                return getForecast(getLatitude(locationIQResponse), getLongitude(locationIQResponse), getLocation(locationIQResponse));
+                LocationData[] ld = gsonService.stringToLocations(locationIQResponse);
+                LocationData l = ld[0];
+                return getForecast(l.getLat(), l.getLon(), l.getDisplayName());
             }
         }
     }
@@ -71,23 +72,6 @@ public class WeatherService {
         return forecastResponse;
     }
 
-    private String getLocation(String locationIQResponse) {
-        JSONArray array = new JSONArray(locationIQResponse);
-        JSONObject jsonObject = array.getJSONObject(0);
-        return jsonObject.getString("display_name");
-    }
-
-    private String getLongitude(String locationIQResponse) {
-        JSONArray array = new JSONArray(locationIQResponse);
-        JSONObject jsonObject = array.getJSONObject(0);
-        return jsonObject.getString("lon");
-    }
-
-    private String getLatitude(String locationIQResponse) {
-        JSONArray array = new JSONArray(locationIQResponse);
-        JSONObject jsonObject = array.getJSONObject(0);
-        return jsonObject.getString("lat");
-    }
 
     public ForecastResponse getForecast(String latitude, String longitude, String location) {
 
