@@ -36,7 +36,7 @@ public class ResponseToFormServiceTest extends CommonForTest {
         assertThat(f.getHours()).isNotNull();
         assertThat(f.getAlerts()).isNotNull();
 
-        chechCurrently(f.getCurrently());
+        checkCurrently(f.getCurrently());
         checkWeek(f.getWeek());
         checkHours(f.getHours());
         checkAlerts(f.getAlerts());

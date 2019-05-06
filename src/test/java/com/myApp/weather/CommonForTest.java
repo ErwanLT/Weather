@@ -49,7 +49,7 @@ public class CommonForTest {
         }
     };
 
-    protected void chechCurrently(Currently currently) {
+    protected void checkCurrently(Currently currently) {
         assertThat(currently.getSummary()).isNotNull();
         assertThat(currently.getTime()).isNotNull();
         assertThat(currently.getIcon()).isNotNull();
@@ -69,10 +69,10 @@ public class CommonForTest {
 
         assertThat(week.size()).isEqualTo(8);
 
-        checkdaily(week.get(0));
+        checkDaily(week.get(0));
     }
 
-    protected void checkdaily(Daily daily) {
+    protected void checkDaily(Daily daily) {
         assertThat(daily.getId()).isNotNull();
         assertThat(daily.getTime()).isNotNull();
         assertThat(daily.getSummary()).isNotNull();
