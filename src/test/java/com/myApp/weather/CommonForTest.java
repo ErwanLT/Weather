@@ -51,6 +51,7 @@ public class CommonForTest {
 
     protected void chechCurrently(Currently currently) {
         assertThat(currently.getSummary()).isNotNull();
+        assertThat(currently.getTime()).isNotNull();
         assertThat(currently.getIcon()).isNotNull();
         assertThat(currently.getTemperature()).isNotNull();
         assertThat(currently.getApparentTemperature()).isNotNull();

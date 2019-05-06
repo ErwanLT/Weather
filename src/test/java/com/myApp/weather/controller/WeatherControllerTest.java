@@ -111,7 +111,7 @@ public class WeatherControllerTest extends CommonForTest {
 
         Forecast f = (Forecast) ((BindingAwareModelMap) model).get("forecast");
         assertThat(f).isNotNull();
-
+        assertThat(f.getLocation()).isNotNull();
         chechCurrently(f.getCurrently());
         checkWeek(f.getWeek());
         checkHours(f.getHours());
