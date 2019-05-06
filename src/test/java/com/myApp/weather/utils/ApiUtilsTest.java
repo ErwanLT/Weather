@@ -29,4 +29,18 @@ public class ApiUtilsTest {
             .contains(LOCATIONIQ_URL1)
             .contains(LOCATIONIQ_URL2);
     }
+
+    @Test
+    public void testDarkSkyConstant(){
+        assertThat(DARK_SKY_URL).isNotNull().isNotEmpty();
+        assertThat(DARK_SKY_LANG).isNotNull().isNotEmpty();
+        assertThat(DARK_SKY_SI_UNIT).isNotNull().isNotEmpty();
+        assertThat(DARK_SKY_EXCLUDE).isNotNull().isNotEmpty();
+    }
+
+    @Test
+    public void testLocationIQConstant(){
+        assertThat(LOCATIONIQ_URL1).isNotNull().isNotEmpty();
+        assertThat(LOCATIONIQ_URL2).isNotNull().isNotEmpty();
+    }
 }
