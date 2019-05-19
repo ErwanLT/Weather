@@ -57,8 +57,6 @@ public class DateService {
                 .atZone(zone)
                 .format(formatter);
 
-        log.info(time +" = " + formattedDtm);
-
         return formattedDtm;
     }
 }
