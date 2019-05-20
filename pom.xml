@@ -5,11 +5,11 @@
 
 	<groupId>com.myApp</groupId>
 	<artifactId>weather</artifactId>
-	<version>1.4.0-SNAPSHOT</version>
+	<version>1.5.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>weather</name>
-	<description>Demo project for Spring Boot</description>
+	<name>EWeather</name>
+	<description>A simple web application using spring-boot to call the DarkSky Api and dispatch the result in a beautiful (all is relative) web page</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -122,6 +122,30 @@
 				<groupId>org.eluder.coveralls</groupId>
 				<artifactId>coveralls-maven-plugin</artifactId>
 				<version>4.3.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.basedir}</outputDirectory>
+							<resources>
+								<resource>
+									<directory>input</directory>
+									<filtering>true</filtering>
+								</resource>
+							</resources>
+							<encoding>UTF-8</encoding>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
