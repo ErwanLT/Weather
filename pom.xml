@@ -10,6 +10,10 @@
 
 	<name>EWeather</name>
 	<description>A simple web application using spring-boot to call the DarkSky Api and dispatch the result in a beautiful (all is relative) web page</description>
+	<inceptionYear>2018</inceptionYear>
+	<organization>
+		<name>Erwan Le Tutour</name>
+	</organization>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -122,6 +126,26 @@
 				<groupId>org.eluder.coveralls</groupId>
 				<artifactId>coveralls-maven-plugin</artifactId>
 				<version>4.3.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>1.20</version>
+				<configuration>
+					<licenseName>mit</licenseName>
+					<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+					<processStartTag>========================LICENSE_START=================================</processStartTag>
+					<processEndTag>=========================LICENSE_END==================================</processEndTag>
+				</configuration>
+				<executions>
+					<execution>
+						<id>first</id>
+						<goals>
+							<goal>update-file-header</goal>
+						</goals>
+						<phase>process-sources</phase>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
