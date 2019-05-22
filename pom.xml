@@ -135,6 +135,7 @@
 					<licenseName>mit</licenseName>
 					<addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
 					<processStartTag>========================LICENSE_START=================================</processStartTag>
+					<sectionDelimiter>======================================================================</sectionDelimiter>
 					<processEndTag>=========================LICENSE_END==================================</processEndTag>
 				</configuration>
 				<executions>
