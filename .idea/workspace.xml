@@ -3,99 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48d2eebf-35d2-48ce-b5b0-ee22dd63aba0" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/WeatherApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/WeatherApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Alert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Alert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/CoordinateForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Currently.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Currently.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Daily.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Daily.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Forecast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Forecast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Hourly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Hourly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DarkSkyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DarkSkyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/DateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/GsonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/GsonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/LocationIQService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/LocationIQService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/ResponseToFormService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/ResponseToFormService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/service/WeatherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/utils/ApiUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/utils/ApiUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/utils/FakeForecastUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/utils/FakeForecastUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/utils/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/utils/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/utils/MessageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/utils/MessageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/Alert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/Alert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/Currently.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/Currently.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/Daily.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/Daily.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/DailyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/DailyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/ForecastResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/ForecastResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/Hourly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/Hourly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/HourlyData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/HourlyData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/LocationData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myApp/weather/weatherModel/toparse/LocationData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/500.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/500.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/all.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/all.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/brands.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/brands.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/brands.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/brands.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/fontawesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/fontawesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/regular.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/regular.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/regular.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/regular.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/solid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/solid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/solid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/solid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/svg-with-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/svg-with-js.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/svg-with-js.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/svg-with-js.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/v4-shims.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/v4-shims.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/v4-shims.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fontawesome/v4-shims.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.carousel.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.theme.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.theme.default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.theme.default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.theme.default.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.theme.green.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.theme.green.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.theme.green.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/owlcarousel/owl.theme.green.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/timeline.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/timeline.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/weather.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/weather.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/all.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/brands.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/brands.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/brands.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/brands.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/fontawesome.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/fontawesome.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/fontawesome.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/fontawesome.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/regular.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/regular.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/regular.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/regular.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/solid.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/solid.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/solid.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/solid.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/v4-shims.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/v4-shims.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/v4-shims.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/fontawesome/v4-shims.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/owlcarousel/owl.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/owlcarousel/owl.carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/owlcarousel/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/owlcarousel/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/weather.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/weather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/components.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/components.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/currentInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/currentInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/currently.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/currently.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/hours.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/hours.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/week.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/week.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/help.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/history.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/history.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/CommonForTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/CommonForTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/ForecastResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/ForecastResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/LocationIQResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/LocationIQResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/WeatherApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/WeatherApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/HttpRequestTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/HttpRequestTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/WeatherControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/controller/WeatherControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/form/CoordinateFormTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/form/CoordinateFormTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/service/DateServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/service/DateServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/service/GsonServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/service/GsonServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/service/ResponseToFormServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/service/ResponseToFormServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/service/WeatherServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/service/WeatherServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/utils/ApiUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/utils/ApiUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/utils/FakeForecastUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/utils/FakeForecastUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/utils/MessageHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/utils/MessageHelperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/myApp/weather/utils/MessageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/myApp/weather/utils/MessageTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -128,7 +36,18 @@
     <option name="myAutoScrollToSource" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            </state>
+          </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -185,7 +104,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/Utils/ApiUtils.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/input/README.md" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/controller/WeatherController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/form/Alert.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/myApp/weather/WeatherApplication.java" />
@@ -227,6 +145,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/myApp/weather/ForecastResponse.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/myApp/weather/LocationIQResponse.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/myApp/weather/WeatherApplicationTests.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -261,8 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -409,6 +326,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1059,7 +978,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85015000" />
+    <option name="totallyTimeSpent" value="85171000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1072,9 +991,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1680" height="982" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50143063" side_tool="true" weight="0.26933703" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.501836" side_tool="true" visible="true" weight="0.23300971" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info id="Capture Tool" order="5" />
@@ -1086,30 +1006,58 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.3977747" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32825485" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32596686" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3276699" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49816403" visible="true" weight="0.23300971" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.32038835" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.4985694" visible="true" weight="0.21359223" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32872927" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32524273" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6583851" visible="true" weight="0.2992656" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49877602" weight="0.32524273" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6583851" visible="true" weight="0.30293757" />
       <window_info anchor="right" id="Bean Validation" order="11" weight="0.3297568" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="15" />
       <window_info anchor="right" id="SciView" order="12" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Spring" order="11" weight="0.32872927" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4985694" weight="0.32038835" />
+      <window_info anchor="right" id="Database" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32524273" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6583851" visible="true" weight="0.2992656" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.24663402" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Structure" order="1" sideWeight="0.3416149" side_tool="true" weight="0.2639485" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32825485" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="SonarLint" order="15" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50143063" side_tool="true" weight="0.26933703" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3276699" />
+      <window_info anchor="right" id="Bean Validation" order="11" weight="0.3297568" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.4985694" visible="true" weight="0.21359223" />
+      <window_info anchor="right" id="SciView" order="12" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven" order="9" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32596686" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49928468" weight="0.3977747" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1286,8 +1234,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="137" column="121" selection-start-line="137" selection-start-column="121" selection-end-line="137" selection-end-column="121" />
+        <state relative-caret-position="120">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
